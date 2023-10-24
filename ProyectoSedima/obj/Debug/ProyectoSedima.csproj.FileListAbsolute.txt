@@ -1,0 +1,11 @@
+C:\Users\Oscar\OneDrive\Documentos\ProyectoSedima\ProyectoSedima\bin\Debug\ProyectoSedima.exe.config
+C:\Users\Oscar\OneDrive\Documentos\ProyectoSedima\ProyectoSedima\bin\Debug\ProyectoSedima.exe
+C:\Users\Oscar\OneDrive\Documentos\ProyectoSedima\ProyectoSedima\bin\Debug\ProyectoSedima.pdb
+C:\Users\Oscar\OneDrive\Documentos\ProyectoSedima\ProyectoSedima\obj\Debug\ProyectoSedima.csproj.AssemblyReference.cache
+C:\Users\Oscar\OneDrive\Documentos\ProyectoSedima\ProyectoSedima\obj\Debug\ProyectoSedima.PL.frmReportes.resources
+C:\Users\Oscar\OneDrive\Documentos\ProyectoSedima\ProyectoSedima\obj\Debug\ProyectoSedima.Properties.Resources.resources
+C:\Users\Oscar\OneDrive\Documentos\ProyectoSedima\ProyectoSedima\obj\Debug\ProyectoSedima.csproj.GenerateResource.cache
+C:\Users\Oscar\OneDrive\Documentos\ProyectoSedima\ProyectoSedima\obj\Debug\ProyectoSedima.csproj.CoreCompileInputs.cache
+C:\Users\Oscar\OneDrive\Documentos\ProyectoSedima\ProyectoSedima\obj\Debug\ProyectoSedima.exe
+C:\Users\Oscar\OneDrive\Documentos\ProyectoSedima\ProyectoSedima\obj\Debug\ProyectoSedima.pdb
+C:\Users\Oscar\OneDrive\Documentos\ProyectoSedima\ProyectoSedima\obj\Debug\ProyectoSedima.LOGIN.resources
