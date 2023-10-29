@@ -19,7 +19,8 @@ namespace ProyectoSedima.PL
 
         private void frmReportes_Load(object sender, EventArgs e)
         {
-            Size = new Size(955, 1500);
+          
+
         }
 
         private void label22_Click(object sender, EventArgs e)
