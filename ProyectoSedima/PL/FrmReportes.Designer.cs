@@ -894,7 +894,7 @@
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(52, 15);
             this.label50.TabIndex = 85;
-            this.label50.Text = "MInimo:";
+            this.label50.Text = "Minimo:";
             // 
             // label51
             // 
