@@ -16,7 +16,7 @@ namespace ProyectoSedima.PL
 {
     public partial class FrmReportes : Form
     {
-        static string conexionstring = "Data Source=LAPTOP-OSCAR202\\SQLEXPRESS;Initial Catalog=SEDIMA;Integrated Security=True";
+        static string conexionstring = "Server=localhost\\SQLEXPRESS;Database=SEDIMA;Trusted_Connection=True;";  //"Data Source=LAPTOP-OSCAR202\\SQLEXPRESS;Initial Catalog=SEDIMA;Integrated Security=True";
         SqlConnection conexion = new SqlConnection(conexionstring);
 
         private void btnConectar_Click(object sender, EventArgs e)
@@ -112,6 +112,20 @@ namespace ProyectoSedima.PL
 
         private void label1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            string cadena = "DELETE FROM REPORTES WHERE CODIGO=" +
+                "VALUES('" + txtCliente.Text + "','" + txtCaldera.Text + "','" + txtModelo.Text + "','" + txtSerie.Text + "','" + txtCiudad.Text + "','" + txtFecha.Text + "','" + txtFA.Text + "','" + txtFG.Text + "','" + txtPC.Text + "','" + txtABN.Text + "','','" + txtANN.Text + "','" + txtVN.Text + "','" + txtFCN.Text + "','" + txtPF.Text + "','" + txtPDC.Text + "','" + txtMC.Text + "','" + txtVV.Text + "','" + txtVG.Text + "','" + txtBG.Text + "','" + txtPI.Text + "','" + txtEFP.Text + "','" + txtFF.Text + "','" + txtBNA.Text + "','" + txtCPV.Text + "','" + txtLQ.Text + "','" + txtCE.Text + "','" + txtChimenea.Text + "','" + txtAguaTanque.Text + "','" + txtEC.Text + "','" + txtSC.Text + "','" + txtVAP.Text + "','" + txtAA.Text + "','" + txtBAA.Text + "','" + txtBAD.Text + "','" + txtMV.Text + "'," + txtMinCo2.Text + ",'" + txtMinO2.Text + "','" + txtMinPpm.Text + "','" + txtMinEx.Text + "','" + txtMedCo2.Text + "','" + txtMedO2.Text + "','" + txtMedPpm.Text + "','" + txtMedEx.Text + "','" + txtMaxCo2.Text + "','" + txtMaxO2.Text + "','" + txtMaxPpm.Text + "','" + txtMaxEx.Text + "','" + txtComentarios + "')";
+
+            SqlCommand comando = new SqlCommand(cadena, conexion);
+
+            comando.ExecuteNonQuery();
+
+            MessageBox.Show("Se eliminó correctamente");
 
         }
     }

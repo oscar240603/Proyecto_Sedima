@@ -20,3 +20,14 @@ C:\Users\asara\Source\Repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSed
 C:\Users\asara\Source\Repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSedima.csproj.CoreCompileInputs.cache
 C:\Users\asara\Source\Repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSedima.exe
 C:\Users\asara\Source\Repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSedima.pdb
+C:\Users\diego\Source\Repos\Proyecto_Sedima2\ProyectoSedima\obj\Debug\ProyectoSedima.csproj.AssemblyReference.cache
+C:\Users\diego\Source\Repos\Proyecto_Sedima2\ProyectoSedima\obj\Debug\ProyectoSedima.LOGIN.resources
+C:\Users\diego\Source\Repos\Proyecto_Sedima2\ProyectoSedima\obj\Debug\ProyectoSedima.PL.FrmReportes.resources
+C:\Users\diego\Source\Repos\Proyecto_Sedima2\ProyectoSedima\obj\Debug\ProyectoSedima.Properties.Resources.resources
+C:\Users\diego\Source\Repos\Proyecto_Sedima2\ProyectoSedima\obj\Debug\ProyectoSedima.csproj.GenerateResource.cache
+C:\Users\diego\Source\Repos\Proyecto_Sedima2\ProyectoSedima\obj\Debug\ProyectoSedima.csproj.CoreCompileInputs.cache
+C:\Users\diego\Source\Repos\Proyecto_Sedima2\ProyectoSedima\obj\Debug\ProyectoSedima.exe
+C:\Users\diego\Source\Repos\Proyecto_Sedima2\ProyectoSedima\obj\Debug\ProyectoSedima.pdb
+C:\Users\diego\Source\Repos\Proyecto_Sedima2\ProyectoSedima\bin\Debug\ProyectoSedima.exe.config
+C:\Users\diego\Source\Repos\Proyecto_Sedima2\ProyectoSedima\bin\Debug\ProyectoSedima.exe
+C:\Users\diego\Source\Repos\Proyecto_Sedima2\ProyectoSedima\bin\Debug\ProyectoSedima.pdb
