@@ -31,3 +31,15 @@ C:\Users\diego\Source\Repos\Proyecto_Sedima2\ProyectoSedima\obj\Debug\ProyectoSe
 C:\Users\diego\Source\Repos\Proyecto_Sedima2\ProyectoSedima\bin\Debug\ProyectoSedima.exe.config
 C:\Users\diego\Source\Repos\Proyecto_Sedima2\ProyectoSedima\bin\Debug\ProyectoSedima.exe
 C:\Users\diego\Source\Repos\Proyecto_Sedima2\ProyectoSedima\bin\Debug\ProyectoSedima.pdb
+C:\Users\Oscar\Source\Repos\Proyecto_Sedima1\ProyectoSedima\bin\Debug\ProyectoSedima.exe.config
+C:\Users\Oscar\Source\Repos\Proyecto_Sedima1\ProyectoSedima\bin\Debug\ProyectoSedima.exe
+C:\Users\Oscar\Source\Repos\Proyecto_Sedima1\ProyectoSedima\bin\Debug\ProyectoSedima.pdb
+C:\Users\Oscar\Source\Repos\Proyecto_Sedima1\ProyectoSedima\obj\Debug\ProyectoSedima.csproj.AssemblyReference.cache
+C:\Users\Oscar\Source\Repos\Proyecto_Sedima1\ProyectoSedima\obj\Debug\ProyectoSedima.LOGIN.resources
+C:\Users\Oscar\Source\Repos\Proyecto_Sedima1\ProyectoSedima\obj\Debug\ProyectoSedima.PL.FrmBorrar_Modificar.resources
+C:\Users\Oscar\Source\Repos\Proyecto_Sedima1\ProyectoSedima\obj\Debug\ProyectoSedima.PL.FrmReportes.resources
+C:\Users\Oscar\Source\Repos\Proyecto_Sedima1\ProyectoSedima\obj\Debug\ProyectoSedima.Properties.Resources.resources
+C:\Users\Oscar\Source\Repos\Proyecto_Sedima1\ProyectoSedima\obj\Debug\ProyectoSedima.csproj.GenerateResource.cache
+C:\Users\Oscar\Source\Repos\Proyecto_Sedima1\ProyectoSedima\obj\Debug\ProyectoSedima.csproj.CoreCompileInputs.cache
+C:\Users\Oscar\Source\Repos\Proyecto_Sedima1\ProyectoSedima\obj\Debug\ProyectoSedima.exe
+C:\Users\Oscar\Source\Repos\Proyecto_Sedima1\ProyectoSedima\obj\Debug\ProyectoSedima.pdb
