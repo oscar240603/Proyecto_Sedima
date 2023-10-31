@@ -124,6 +124,19 @@ namespace ProyectoSedima.PL
 
         }
 
+        private void txtModelo_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void label57_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+            progressBar1.ForeColor = Color.Red;
+        }
     }
 }
