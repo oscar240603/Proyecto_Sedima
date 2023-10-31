@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+using System.Reflection.Emit;
 //using ProyectoSedima.DAL;
 
 namespace ProyectoSedima.PL
@@ -53,6 +55,63 @@ namespace ProyectoSedima.PL
             comando.ExecuteNonQuery();
 
             MessageBox.Show("Se agrego correctamente");
+
+        }
+
+        private void Cancelar_Click(object sender, EventArgs e)
+        {
+            txtCliente.Clear();
+            txtFecha.Clear();
+            txtCiudad.Clear();
+            txtCaldera.Clear();
+            txtModelo.Clear();
+            txtSerie.Clear();
+            txtFA.Clear();
+            txtFG.Clear();
+            txtPC.Clear();
+            txtABN.Clear();
+            txtANN.Clear();
+            txtVN.Clear();
+            txtFCN.Clear();
+            txtPF.Clear();
+            txtPDC.Clear();
+            txtMC.Clear();
+            txtVV.Clear();
+            txtVG.Clear();
+            txtBG.Clear();
+            txtPI.Clear();
+            txtEFP.Clear();
+            txtChimenea.Clear();
+            txtAguaTanque.Clear();
+            txtEC.Clear();
+            txtSC.Clear();
+            txtVAP.Clear();
+            txtAA.Clear();
+            txtAC.Clear();
+            txtBAA.Clear();
+            txtBAD.Clear();
+            txtMV.Clear();
+            txtComentarios.Clear();
+            txtFF.Clear();
+            txtCPV.Clear();
+            txtBNA.Clear();
+            txtMinCo2.Clear();
+            txtMedPpm.Clear();
+            txtMedO2.Clear();
+            txtMedCo2.Clear();
+            txtMinEx.Clear();
+            txtMinPpm.Clear();
+            txtMinO2.Clear();
+            txtMaxEx.Clear();
+            txtMaxPpm.Clear();
+            txtMaxO2.Clear();
+            txtMaxCo2.Clear();
+            txtMedEx.Clear();
+            txtCE.Clear();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }

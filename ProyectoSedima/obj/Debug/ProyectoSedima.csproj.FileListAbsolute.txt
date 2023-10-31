@@ -9,3 +9,14 @@ C:\Users\Oscar\OneDrive\Documentos\ProyectoSedima\ProyectoSedima\obj\Debug\Proye
 C:\Users\Oscar\OneDrive\Documentos\ProyectoSedima\ProyectoSedima\obj\Debug\ProyectoSedima.exe
 C:\Users\Oscar\OneDrive\Documentos\ProyectoSedima\ProyectoSedima\obj\Debug\ProyectoSedima.pdb
 C:\Users\Oscar\OneDrive\Documentos\ProyectoSedima\ProyectoSedima\obj\Debug\ProyectoSedima.LOGIN.resources
+C:\Users\asara\Source\Repos\Proyecto_Sedima\ProyectoSedima\bin\Debug\ProyectoSedima.exe.config
+C:\Users\asara\Source\Repos\Proyecto_Sedima\ProyectoSedima\bin\Debug\ProyectoSedima.exe
+C:\Users\asara\Source\Repos\Proyecto_Sedima\ProyectoSedima\bin\Debug\ProyectoSedima.pdb
+C:\Users\asara\Source\Repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSedima.csproj.AssemblyReference.cache
+C:\Users\asara\Source\Repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSedima.LOGIN.resources
+C:\Users\asara\Source\Repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSedima.PL.FrmReportes.resources
+C:\Users\asara\Source\Repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSedima.Properties.Resources.resources
+C:\Users\asara\Source\Repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSedima.csproj.GenerateResource.cache
+C:\Users\asara\Source\Repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSedima.csproj.CoreCompileInputs.cache
+C:\Users\asara\Source\Repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSedima.exe
+C:\Users\asara\Source\Repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSedima.pdb

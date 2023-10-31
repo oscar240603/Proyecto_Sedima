@@ -135,17 +135,19 @@
             this.txtLQ = new System.Windows.Forms.TextBox();
             this.btnInsertar = new System.Windows.Forms.Button();
             this.btnConectar = new System.Windows.Forms.Button();
+            this.Cancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(49, 37);
+            this.label1.Location = new System.Drawing.Point(49, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "CLIENTE:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtCliente
             // 
@@ -1078,6 +1080,16 @@
             this.btnConectar.UseVisualStyleBackColor = true;
             this.btnConectar.Click += new System.EventHandler(this.btnConectar_Click);
             // 
+            // Cancelar
+            // 
+            this.Cancelar.Location = new System.Drawing.Point(220, 994);
+            this.Cancelar.Name = "Cancelar";
+            this.Cancelar.Size = new System.Drawing.Size(77, 23);
+            this.Cancelar.TabIndex = 114;
+            this.Cancelar.Text = "Cancelar";
+            this.Cancelar.UseVisualStyleBackColor = true;
+            this.Cancelar.Click += new System.EventHandler(this.Cancelar_Click);
+            // 
             // FrmReportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1087,6 +1099,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ClientSize = new System.Drawing.Size(884, 749);
+            this.Controls.Add(this.Cancelar);
             this.Controls.Add(this.btnConectar);
             this.Controls.Add(this.btnInsertar);
             this.Controls.Add(this.txtLQ);
@@ -1314,5 +1327,6 @@
         private System.Windows.Forms.TextBox txtLQ;
         private System.Windows.Forms.Button btnInsertar;
         private System.Windows.Forms.Button btnConectar;
+        private System.Windows.Forms.Button Cancelar;
     }
 }
