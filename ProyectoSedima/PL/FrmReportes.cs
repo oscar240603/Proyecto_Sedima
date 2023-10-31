@@ -134,9 +134,21 @@ namespace ProyectoSedima.PL
 
         }
 
-        private void progressBar1_Click(object sender, EventArgs e)
+        private void txtFecha_Enter(object sender, EventArgs e)
         {
-            progressBar1.ForeColor = Color.Red;
+            if(txtFecha.Text == "YYYY/MM/DD")
+            {
+                txtFecha.Text = "";
+            }
+        }
+
+        private void txtFecha_Leave(object sender, EventArgs e)
+        {
+            if (txtFecha.Text == "")
+            {
+                txtFecha.Text = "YYYY/MM/DD";
+            }
+
         }
     }
 }
