@@ -282,6 +282,7 @@
             this.txtFA.Name = "txtFA";
             this.txtFA.Size = new System.Drawing.Size(51, 20);
             this.txtFA.TabIndex = 13;
+            this.txtFA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFA_KeyPress);
             // 
             // label9
             // 
@@ -299,6 +300,8 @@
             this.txtFG.Name = "txtFG";
             this.txtFG.Size = new System.Drawing.Size(51, 20);
             this.txtFG.TabIndex = 15;
+            this.txtFG.TextChanged += new System.EventHandler(this.txtFG_TextChanged);
+            this.txtFG.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFG_KeyPress);
             // 
             // label10
             // 
@@ -316,6 +319,8 @@
             this.txtPC.Name = "txtPC";
             this.txtPC.Size = new System.Drawing.Size(51, 20);
             this.txtPC.TabIndex = 17;
+            this.txtPC.TextChanged += new System.EventHandler(this.txtPC_TextChanged);
+            this.txtPC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPC_KeyPress);
             // 
             // label11
             // 
@@ -344,6 +349,7 @@
             this.txtABN.Name = "txtABN";
             this.txtABN.Size = new System.Drawing.Size(51, 20);
             this.txtABN.TabIndex = 20;
+            this.txtABN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtABN_KeyPress);
             // 
             // label13
             // 
@@ -361,6 +367,7 @@
             this.txtANN.Name = "txtANN";
             this.txtANN.Size = new System.Drawing.Size(51, 20);
             this.txtANN.TabIndex = 22;
+            this.txtANN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtANN_KeyPress);
             // 
             // label14
             // 
@@ -389,6 +396,7 @@
             this.txtVN.Name = "txtVN";
             this.txtVN.Size = new System.Drawing.Size(51, 20);
             this.txtVN.TabIndex = 25;
+            this.txtVN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtVN_KeyPress);
             // 
             // label16
             // 
@@ -406,6 +414,7 @@
             this.txtFCN.Name = "txtFCN";
             this.txtFCN.Size = new System.Drawing.Size(51, 20);
             this.txtFCN.TabIndex = 27;
+            this.txtFCN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFCN_KeyPress);
             // 
             // label17
             // 
@@ -423,6 +432,7 @@
             this.txtPF.Name = "txtPF";
             this.txtPF.Size = new System.Drawing.Size(51, 20);
             this.txtPF.TabIndex = 29;
+            this.txtPF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPF_KeyPress);
             // 
             // label18
             // 
@@ -440,6 +450,7 @@
             this.txtPDC.Name = "txtPDC";
             this.txtPDC.Size = new System.Drawing.Size(51, 20);
             this.txtPDC.TabIndex = 31;
+            this.txtPDC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPDC_KeyPress);
             // 
             // label19
             // 
@@ -457,6 +468,7 @@
             this.txtMC.Name = "txtMC";
             this.txtMC.Size = new System.Drawing.Size(51, 20);
             this.txtMC.TabIndex = 33;
+            this.txtMC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMC_KeyPress);
             // 
             // label20
             // 
@@ -485,6 +497,7 @@
             this.txtVV.Name = "txtVV";
             this.txtVV.Size = new System.Drawing.Size(51, 20);
             this.txtVV.TabIndex = 37;
+            this.txtVV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtVV_KeyPress);
             // 
             // txtVG
             // 
@@ -492,6 +505,7 @@
             this.txtVG.Name = "txtVG";
             this.txtVG.Size = new System.Drawing.Size(51, 20);
             this.txtVG.TabIndex = 38;
+            this.txtVG.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtVG_KeyPress);
             // 
             // label23
             // 
@@ -531,6 +545,7 @@
             this.txtBG.Name = "txtBG";
             this.txtBG.Size = new System.Drawing.Size(51, 20);
             this.txtBG.TabIndex = 42;
+            this.txtBG.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBG_KeyPress);
             // 
             // txtPI
             // 
@@ -538,6 +553,7 @@
             this.txtPI.Name = "txtPI";
             this.txtPI.Size = new System.Drawing.Size(51, 20);
             this.txtPI.TabIndex = 43;
+            this.txtPI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPI_KeyPress);
             // 
             // label26
             // 
@@ -555,6 +571,7 @@
             this.txtEFP.Name = "txtEFP";
             this.txtEFP.Size = new System.Drawing.Size(51, 20);
             this.txtEFP.TabIndex = 45;
+            this.txtEFP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEFP_KeyPress);
             // 
             // label27
             // 
@@ -638,6 +655,7 @@
             this.txtEC.Name = "txtEC";
             this.txtEC.Size = new System.Drawing.Size(51, 20);
             this.txtEC.TabIndex = 55;
+            this.txtEC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEC_KeyPress);
             // 
             // label33
             // 
@@ -655,6 +673,7 @@
             this.txtSC.Name = "txtSC";
             this.txtSC.Size = new System.Drawing.Size(51, 20);
             this.txtSC.TabIndex = 57;
+            this.txtSC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSC_KeyPress);
             // 
             // label34
             // 
@@ -672,6 +691,7 @@
             this.txtVAP.Name = "txtVAP";
             this.txtVAP.Size = new System.Drawing.Size(51, 20);
             this.txtVAP.TabIndex = 59;
+            this.txtVAP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtVAP_KeyPress);
             // 
             // label35
             // 
@@ -700,6 +720,7 @@
             this.txtAA.Name = "txtAA";
             this.txtAA.Size = new System.Drawing.Size(51, 20);
             this.txtAA.TabIndex = 62;
+            this.txtAA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAA_KeyPress);
             // 
             // label37
             // 
@@ -717,6 +738,7 @@
             this.txtAC.Name = "txtAC";
             this.txtAC.Size = new System.Drawing.Size(51, 20);
             this.txtAC.TabIndex = 64;
+            this.txtAC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAC_KeyPress);
             // 
             // label38
             // 
@@ -765,6 +787,7 @@
             this.txtBAA.Name = "txtBAA";
             this.txtBAA.Size = new System.Drawing.Size(51, 20);
             this.txtBAA.TabIndex = 69;
+            this.txtBAA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBAA_KeyPress);
             // 
             // txtBAD
             // 
@@ -772,6 +795,7 @@
             this.txtBAD.Name = "txtBAD";
             this.txtBAD.Size = new System.Drawing.Size(51, 20);
             this.txtBAD.TabIndex = 70;
+            this.txtBAD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBAD_KeyPress);
             // 
             // txtMV
             // 
@@ -779,6 +803,7 @@
             this.txtMV.Name = "txtMV";
             this.txtMV.Size = new System.Drawing.Size(51, 20);
             this.txtMV.TabIndex = 71;
+            this.txtMV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMV_KeyPress);
             // 
             // label42
             // 
@@ -795,7 +820,7 @@
             this.txtComentarios.Location = new System.Drawing.Point(448, 863);
             this.txtComentarios.Multiline = true;
             this.txtComentarios.Name = "txtComentarios";
-            this.txtComentarios.Size = new System.Drawing.Size(407, 113);
+            this.txtComentarios.Size = new System.Drawing.Size(354, 113);
             this.txtComentarios.TabIndex = 73;
             // 
             // label43
@@ -845,6 +870,7 @@
             this.txtFF.Name = "txtFF";
             this.txtFF.Size = new System.Drawing.Size(51, 20);
             this.txtFF.TabIndex = 78;
+            this.txtFF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFF_KeyPress);
             // 
             // txtCPV
             // 
@@ -852,6 +878,7 @@
             this.txtCPV.Name = "txtCPV";
             this.txtCPV.Size = new System.Drawing.Size(51, 20);
             this.txtCPV.TabIndex = 79;
+            this.txtCPV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPV_KeyPress);
             // 
             // txtBNA
             // 
@@ -859,6 +886,7 @@
             this.txtBNA.Name = "txtBNA";
             this.txtBNA.Size = new System.Drawing.Size(51, 20);
             this.txtBNA.TabIndex = 80;
+            this.txtBNA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBNA_KeyPress);
             // 
             // label21
             // 
@@ -1063,6 +1091,7 @@
             this.txtCE.Name = "txtCE";
             this.txtCE.Size = new System.Drawing.Size(51, 20);
             this.txtCE.TabIndex = 110;
+            this.txtCE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCE_KeyPress);
             // 
             // txtLQ
             // 
@@ -1070,6 +1099,7 @@
             this.txtLQ.Name = "txtLQ";
             this.txtLQ.Size = new System.Drawing.Size(51, 20);
             this.txtLQ.TabIndex = 111;
+            this.txtLQ.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLQ_KeyPress);
             // 
             // btnInsertar
             // 
@@ -1152,9 +1182,9 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(650, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(164, 131);
+            this.pictureBox1.Size = new System.Drawing.Size(164, 147);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 121;
             this.pictureBox1.TabStop = false;
