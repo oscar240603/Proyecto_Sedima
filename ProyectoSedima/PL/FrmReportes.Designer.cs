@@ -610,6 +610,7 @@
             this.txtChimenea.Name = "txtChimenea";
             this.txtChimenea.Size = new System.Drawing.Size(51, 20);
             this.txtChimenea.TabIndex = 50;
+            this.txtChimenea.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtChimenea_KeyPress);
             // 
             // label30
             // 
@@ -627,6 +628,7 @@
             this.txtAguaTanque.Name = "txtAguaTanque";
             this.txtAguaTanque.Size = new System.Drawing.Size(51, 20);
             this.txtAguaTanque.TabIndex = 52;
+            this.txtAguaTanque.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAguaTanque_KeyPress);
             // 
             // label31
             // 
@@ -963,7 +965,7 @@
             // 
             this.label53.AutoSize = true;
             this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(687, 690);
+            this.label53.Location = new System.Drawing.Point(673, 691);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(59, 15);
             this.label53.TabIndex = 88;
@@ -975,6 +977,7 @@
             this.txtMinCo2.Name = "txtMinCo2";
             this.txtMinCo2.Size = new System.Drawing.Size(38, 20);
             this.txtMinCo2.TabIndex = 95;
+            this.txtMinCo2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMinCo2_KeyPress);
             // 
             // txtMedPpm
             // 
@@ -982,6 +985,7 @@
             this.txtMedPpm.Name = "txtMedPpm";
             this.txtMedPpm.Size = new System.Drawing.Size(38, 20);
             this.txtMedPpm.TabIndex = 96;
+            this.txtMedPpm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMedPpm_KeyPress);
             // 
             // txtMedO2
             // 
@@ -989,6 +993,7 @@
             this.txtMedO2.Name = "txtMedO2";
             this.txtMedO2.Size = new System.Drawing.Size(38, 20);
             this.txtMedO2.TabIndex = 97;
+            this.txtMedO2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMedO2_KeyPress);
             // 
             // txtMedCo2
             // 
@@ -996,6 +1001,7 @@
             this.txtMedCo2.Name = "txtMedCo2";
             this.txtMedCo2.Size = new System.Drawing.Size(38, 20);
             this.txtMedCo2.TabIndex = 98;
+            this.txtMedCo2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMedCo2_KeyPress);
             // 
             // txtMinEx
             // 
@@ -1003,6 +1009,7 @@
             this.txtMinEx.Name = "txtMinEx";
             this.txtMinEx.Size = new System.Drawing.Size(38, 20);
             this.txtMinEx.TabIndex = 99;
+            this.txtMinEx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMinEx_KeyPress);
             // 
             // txtMinPpm
             // 
@@ -1010,6 +1017,7 @@
             this.txtMinPpm.Name = "txtMinPpm";
             this.txtMinPpm.Size = new System.Drawing.Size(38, 20);
             this.txtMinPpm.TabIndex = 100;
+            this.txtMinPpm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMinPpm_KeyPress);
             // 
             // txtMinO2
             // 
@@ -1017,6 +1025,7 @@
             this.txtMinO2.Name = "txtMinO2";
             this.txtMinO2.Size = new System.Drawing.Size(38, 20);
             this.txtMinO2.TabIndex = 101;
+            this.txtMinO2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMinO2_KeyPress);
             // 
             // txtMaxEx
             // 
@@ -1024,6 +1033,7 @@
             this.txtMaxEx.Name = "txtMaxEx";
             this.txtMaxEx.Size = new System.Drawing.Size(38, 20);
             this.txtMaxEx.TabIndex = 102;
+            this.txtMaxEx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMaxEx_KeyPress);
             // 
             // txtMaxPpm
             // 
@@ -1031,6 +1041,7 @@
             this.txtMaxPpm.Name = "txtMaxPpm";
             this.txtMaxPpm.Size = new System.Drawing.Size(38, 20);
             this.txtMaxPpm.TabIndex = 103;
+            this.txtMaxPpm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMaxPpm_KeyPress);
             // 
             // txtMaxO2
             // 
@@ -1038,6 +1049,7 @@
             this.txtMaxO2.Name = "txtMaxO2";
             this.txtMaxO2.Size = new System.Drawing.Size(38, 20);
             this.txtMaxO2.TabIndex = 104;
+            this.txtMaxO2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMaxO2_KeyPress);
             // 
             // txtMaxCo2
             // 
@@ -1045,6 +1057,7 @@
             this.txtMaxCo2.Name = "txtMaxCo2";
             this.txtMaxCo2.Size = new System.Drawing.Size(38, 20);
             this.txtMaxCo2.TabIndex = 105;
+            this.txtMaxCo2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMaxCo2_KeyPress);
             // 
             // txtMedEx
             // 
@@ -1052,6 +1065,7 @@
             this.txtMedEx.Name = "txtMedEx";
             this.txtMedEx.Size = new System.Drawing.Size(38, 20);
             this.txtMedEx.TabIndex = 106;
+            this.txtMedEx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMedEx_KeyPress);
             // 
             // label54
             // 
