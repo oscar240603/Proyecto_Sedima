@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBorrar_Modificar));
             this.dgvReportes = new System.Windows.Forms.DataGridView();
+            this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
             this.txtBorrar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnBorrar = new System.Windows.Forms.Button();
-            this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReportes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,32 +49,6 @@
             this.dgvReportes.Size = new System.Drawing.Size(692, 293);
             this.dgvReportes.TabIndex = 0;
             // 
-            // txtBorrar
-            // 
-            this.txtBorrar.Location = new System.Drawing.Point(63, 80);
-            this.txtBorrar.Name = "txtBorrar";
-            this.txtBorrar.Size = new System.Drawing.Size(80, 20);
-            this.txtBorrar.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(60, 54);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(225, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Introduce el Id del reporte que desear eliminar:";
-            // 
-            // btnBorrar
-            // 
-            this.btnBorrar.Location = new System.Drawing.Point(168, 80);
-            this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(75, 23);
-            this.btnBorrar.TabIndex = 3;
-            this.btnBorrar.Text = "Borrar";
-            this.btnBorrar.UseVisualStyleBackColor = true;
-            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
-            // 
             // Editar
             // 
             this.Editar.HeaderText = "Editar";
@@ -88,6 +62,32 @@
             this.Eliminar.Image = ((System.Drawing.Image)(resources.GetObject("Eliminar.Image")));
             this.Eliminar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.Eliminar.Name = "Eliminar";
+            // 
+            // txtBorrar
+            // 
+            this.txtBorrar.Location = new System.Drawing.Point(63, 80);
+            this.txtBorrar.Name = "txtBorrar";
+            this.txtBorrar.Size = new System.Drawing.Size(80, 20);
+            this.txtBorrar.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(60, 54);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(304, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Introduce el Id del reporte que desear marcar como cancelado:";
+            // 
+            // btnBorrar
+            // 
+            this.btnBorrar.Location = new System.Drawing.Point(168, 80);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(75, 23);
+            this.btnBorrar.TabIndex = 3;
+            this.btnBorrar.Text = "Cancelar reporte";
+            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // FrmBorrar_Modificar
             // 

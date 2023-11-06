@@ -135,7 +135,6 @@
             this.txtCE = new System.Windows.Forms.TextBox();
             this.txtLQ = new System.Windows.Forms.TextBox();
             this.btnInsertar = new System.Windows.Forms.Button();
-            this.btnConectar = new System.Windows.Forms.Button();
             this.Cancelar = new System.Windows.Forms.Button();
             this.btnBorrarModificar = new System.Windows.Forms.Button();
             this.label57 = new System.Windows.Forms.Label();
@@ -1117,7 +1116,7 @@
             // 
             // btnInsertar
             // 
-            this.btnInsertar.Location = new System.Drawing.Point(312, 1105);
+            this.btnInsertar.Location = new System.Drawing.Point(217, 1105);
             this.btnInsertar.Name = "btnInsertar";
             this.btnInsertar.Size = new System.Drawing.Size(75, 23);
             this.btnInsertar.TabIndex = 112;
@@ -1125,29 +1124,19 @@
             this.btnInsertar.UseVisualStyleBackColor = true;
             this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
             // 
-            // btnConectar
-            // 
-            this.btnConectar.Location = new System.Drawing.Point(152, 1105);
-            this.btnConectar.Name = "btnConectar";
-            this.btnConectar.Size = new System.Drawing.Size(93, 23);
-            this.btnConectar.TabIndex = 113;
-            this.btnConectar.Text = "Conectar BD";
-            this.btnConectar.UseVisualStyleBackColor = true;
-            this.btnConectar.Click += new System.EventHandler(this.btnConectar_Click);
-            // 
             // Cancelar
             // 
-            this.Cancelar.Location = new System.Drawing.Point(432, 1105);
+            this.Cancelar.Location = new System.Drawing.Point(337, 1105);
             this.Cancelar.Name = "Cancelar";
             this.Cancelar.Size = new System.Drawing.Size(77, 23);
             this.Cancelar.TabIndex = 114;
-            this.Cancelar.Text = "Cancelar";
+            this.Cancelar.Text = "Limpiar";
             this.Cancelar.UseVisualStyleBackColor = true;
             this.Cancelar.Click += new System.EventHandler(this.Cancelar_Click);
             // 
             // btnBorrarModificar
             // 
-            this.btnBorrarModificar.Location = new System.Drawing.Point(556, 1105);
+            this.btnBorrarModificar.Location = new System.Drawing.Point(438, 1105);
             this.btnBorrarModificar.Name = "btnBorrarModificar";
             this.btnBorrarModificar.Size = new System.Drawing.Size(140, 23);
             this.btnBorrarModificar.TabIndex = 116;
@@ -1217,10 +1206,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.AutoScrollMargin = new System.Drawing.Size(100, 100);
+            this.AutoScrollMargin = new System.Drawing.Size(0, 50);
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.ClientSize = new System.Drawing.Size(884, 609);
+            this.ClientSize = new System.Drawing.Size(834, 511);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label59);
@@ -1228,7 +1217,6 @@
             this.Controls.Add(this.label57);
             this.Controls.Add(this.btnBorrarModificar);
             this.Controls.Add(this.Cancelar);
-            this.Controls.Add(this.btnConectar);
             this.Controls.Add(this.btnInsertar);
             this.Controls.Add(this.txtLQ);
             this.Controls.Add(this.txtCE);
@@ -1337,7 +1325,6 @@
             this.Controls.Add(this.label1);
             this.MinimumSize = new System.Drawing.Size(98, 97);
             this.Name = "FrmReportes";
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reportes Sedima";
             this.Load += new System.EventHandler(this.frmReportes_Load);
@@ -1455,7 +1442,6 @@
         private System.Windows.Forms.TextBox txtCE;
         private System.Windows.Forms.TextBox txtLQ;
         private System.Windows.Forms.Button btnInsertar;
-        private System.Windows.Forms.Button btnConectar;
         private System.Windows.Forms.Button Cancelar;
         private System.Windows.Forms.Button btnBorrarModificar;
         private System.Windows.Forms.Label label57;

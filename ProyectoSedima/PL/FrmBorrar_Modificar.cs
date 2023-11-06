@@ -34,11 +34,11 @@ namespace ProyectoSedima.PL
         private void btnBorrar_Click(object sender, EventArgs e)
         {
             conexion.Open();
-            string borrar = "DELETE FROM REPORTES WHERE IdReporte = '" + txtBorrar.Text + "'";
-            SqlCommand comando = new SqlCommand(borrar, conexion);
+            string cancelar = "UPDATE REPORTES SET STATUS = 'Cancelado' WHERE IdReporte ='" + txtBorrar.Text + "'";
+            SqlCommand comando = new SqlCommand(cancelar, conexion);
             comando.ExecuteNonQuery();
 
-            MessageBox.Show("Se elimino correctamente");
+            MessageBox.Show("Se cancelo correctamente");
         }
     }
 }
