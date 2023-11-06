@@ -71,5 +71,28 @@ namespace ProyectoSedima
                 MessageBox.Show("Credenciales incorrectas");
             }
         }
+
+        private void txtUser_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+                txtContra.Focus();
+             
+        }
+
+        private void txtContra_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+                btnLogin.Focus();
+        }
+
+        private void btnLogin_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            FrmReportes FrmReporte = new FrmReportes();
+            this.Hide();
+            FrmReporte.Show();
+
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+                FrmReporte.Focus();
+        }
     }
 }

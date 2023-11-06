@@ -71,6 +71,7 @@
             this.txtContra.Text = "CONTRASEÑA";
             this.txtContra.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtContra.Enter += new System.EventHandler(this.txtContra_Enter);
+            this.txtContra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContra_KeyPress);
             this.txtContra.Leave += new System.EventHandler(this.txtContra_Leave);
             // 
             // btnLogin
@@ -87,6 +88,7 @@
             this.btnLogin.Text = "ACCEDER";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.btnLogin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnLogin_KeyPress);
             // 
             // txtUser
             // 
@@ -100,6 +102,7 @@
             this.txtUser.Text = "USUARIO";
             this.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtUser.Enter += new System.EventHandler(this.txtUser_Enter);
+            this.txtUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUser_KeyPress);
             this.txtUser.Leave += new System.EventHandler(this.txtUser_Leave);
             // 
             // LOGIN

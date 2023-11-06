@@ -27,6 +27,8 @@ namespace ProyectoSedima.PL
             DataTable dt = new DataTable();
             adaptador.Fill(dt);
             dgvReportes.DataSource = dt;
+            dgvReportes.Columns["Editar"].Width = 75;
+            dgvReportes.Columns["Eliminar"].Width = 75;
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)
