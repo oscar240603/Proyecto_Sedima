@@ -162,6 +162,7 @@
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.Size = new System.Drawing.Size(269, 20);
             this.txtCliente.TabIndex = 1;
+            this.txtCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCliente_KeyPress);
             // 
             // label2
             // 
@@ -192,7 +193,9 @@
             this.txtFecha.TabIndex = 4;
             this.txtFecha.Text = "YYYY/MM/DD";
             this.txtFecha.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFecha.TextChanged += new System.EventHandler(this.txtFecha_TextChanged);
             this.txtFecha.Enter += new System.EventHandler(this.txtFecha_Enter);
+            this.txtFecha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFecha_KeyPress);
             this.txtFecha.Leave += new System.EventHandler(this.txtFecha_Leave);
             // 
             // label4
@@ -211,6 +214,7 @@
             this.txtCiudad.Name = "txtCiudad";
             this.txtCiudad.Size = new System.Drawing.Size(109, 20);
             this.txtCiudad.TabIndex = 6;
+            this.txtCiudad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCiudad_KeyPress);
             // 
             // txtCaldera
             // 
@@ -218,6 +222,7 @@
             this.txtCaldera.Name = "txtCaldera";
             this.txtCaldera.Size = new System.Drawing.Size(175, 20);
             this.txtCaldera.TabIndex = 7;
+            this.txtCaldera.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCaldera_KeyPress);
             // 
             // label5
             // 
@@ -236,6 +241,7 @@
             this.txtModelo.Size = new System.Drawing.Size(119, 20);
             this.txtModelo.TabIndex = 9;
             this.txtModelo.TextChanged += new System.EventHandler(this.txtModelo_TextChanged);
+            this.txtModelo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtModelo_KeyPress);
             // 
             // label6
             // 
@@ -253,6 +259,7 @@
             this.txtSerie.Name = "txtSerie";
             this.txtSerie.Size = new System.Drawing.Size(167, 20);
             this.txtSerie.TabIndex = 9;
+            this.txtSerie.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSerie_KeyPress);
             // 
             // label7
             // 
@@ -449,6 +456,7 @@
             this.txtPDC.Name = "txtPDC";
             this.txtPDC.Size = new System.Drawing.Size(51, 20);
             this.txtPDC.TabIndex = 31;
+            this.txtPDC.TextChanged += new System.EventHandler(this.txtPDC_TextChanged);
             this.txtPDC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPDC_KeyPress);
             // 
             // label19
@@ -721,6 +729,7 @@
             this.txtAA.Name = "txtAA";
             this.txtAA.Size = new System.Drawing.Size(51, 20);
             this.txtAA.TabIndex = 62;
+            this.txtAA.TextChanged += new System.EventHandler(this.txtAA_TextChanged);
             this.txtAA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAA_KeyPress);
             // 
             // label37
@@ -1140,7 +1149,7 @@
             this.btnBorrarModificar.Name = "btnBorrarModificar";
             this.btnBorrarModificar.Size = new System.Drawing.Size(140, 23);
             this.btnBorrarModificar.TabIndex = 116;
-            this.btnBorrarModificar.Text = "Borrar/Modificar";
+            this.btnBorrarModificar.Text = "Cancelar/Modificar";
             this.btnBorrarModificar.UseVisualStyleBackColor = true;
             this.btnBorrarModificar.Click += new System.EventHandler(this.btnBorrarModificar_Click);
             // 
@@ -1209,7 +1218,7 @@
             this.AutoScrollMargin = new System.Drawing.Size(0, 50);
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.ClientSize = new System.Drawing.Size(834, 511);
+            this.ClientSize = new System.Drawing.Size(851, 511);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label59);

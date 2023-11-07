@@ -67,3 +67,4 @@ C:\Users\Oscar\Source\Repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSed
 C:\Users\Oscar\Source\Repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSedima.csproj.CoreCompileInputs.cache
 C:\Users\Oscar\Source\Repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSedima.exe
 C:\Users\Oscar\Source\Repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSedima.pdb
+C:\Users\Oscar\Source\Repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSedima.PL.FrmEditar.resources

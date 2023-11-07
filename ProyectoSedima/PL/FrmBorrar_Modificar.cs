@@ -40,5 +40,14 @@ namespace ProyectoSedima.PL
 
             MessageBox.Show("Se cancelo correctamente");
         }
+
+        public void dgvReportes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            FrmEditar frmedit = new FrmEditar();
+            this.Hide();
+            frmedit.Show();
+
+
+        }
     }
 }

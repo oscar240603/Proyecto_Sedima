@@ -48,6 +48,7 @@
             this.dgvReportes.Name = "dgvReportes";
             this.dgvReportes.Size = new System.Drawing.Size(692, 293);
             this.dgvReportes.TabIndex = 0;
+            this.dgvReportes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReportes_CellDoubleClick);
             // 
             // Editar
             // 

@@ -13,6 +13,7 @@ namespace ProyectoSedima
 {
     public partial class LOGIN : Form
     {
+
         public LOGIN()
         {
             InitializeComponent();
@@ -44,6 +45,7 @@ namespace ProyectoSedima
                 txtContra.ForeColor = Color.Black;
                 txtContra.UseSystemPasswordChar = true;
             }
+
 
         }
 
@@ -93,6 +95,11 @@ namespace ProyectoSedima
 
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
                 FrmReporte.Focus();
+        }
+
+        private void txtUser_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
