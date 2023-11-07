@@ -16,7 +16,7 @@ namespace ProyectoSedima.PL
 {
     public partial class FrmReportes : Form
     {
-        static string conexionstring = "Data Source=LAPTOP-OSCAR202\\SQLEXPRESS;Initial Catalog=SEDIMA;Integrated Security=True";
+        static string conexionstring = "Server = localhost\\SQLEXPRESS;Database=SEDIMA;Trusted_Connection=True";                  //"Data Source=LAPTOP-HDVPN48A\\SQLEXPRESS;Initial Catalog=SEDIMA;Integrated Security=True";
         SqlConnection conexion = new SqlConnection(conexionstring);
 
         private void btnConectar_Click(object sender, EventArgs e)
