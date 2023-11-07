@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,8 @@ namespace ProyectoSedima
 {
     public partial class LOGIN : Form
     {
+        static string conexionstring = "Data Source=LAPTOP-OSCAR202\\SQLEXPRESS;Initial Catalog=SEDIMA;Integrated Security=True";
+        SqlConnection conexion = new SqlConnection(conexionstring);
 
         public LOGIN()
         {
@@ -21,7 +24,7 @@ namespace ProyectoSedima
 
         private void txtUser_Enter(object sender, EventArgs e)
         {
-            if(txtUser.Text == "USUARIO")
+            if (txtUser.Text == "USUARIO")
             {
                 txtUser.Text = "";
                 txtUser.ForeColor = Color.Black;
@@ -30,7 +33,7 @@ namespace ProyectoSedima
 
         private void txtUser_Leave(object sender, EventArgs e)
         {
-            if(txtUser.Text == "")
+            if (txtUser.Text == "")
             {
                 txtUser.Text = "USUARIO";
                 txtUser.ForeColor = Color.Gray;
@@ -62,7 +65,13 @@ namespace ProyectoSedima
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if(txtUser.Text == "admin" &&  txtContra.Text == "admin")
+            conexion.Open();
+            string valida = "SELECT Usuario, Contraseña FROM EMPLEADO WHERE Usuario = '"+txtUser.Text+"' and Contraseña = '"+txtContra.Text+"'";
+            SqlCommand comando = new SqlCommand(valida,conexion);
+            SqlDataReader lector;
+            lector = comando.ExecuteReader();
+
+            if(lector.HasRows == true)
             {
                 FrmReportes FrmReporte = new FrmReportes();
                 this.Hide();
@@ -70,8 +79,11 @@ namespace ProyectoSedima
             }
             else
             {
-                MessageBox.Show("Credenciales incorrectas");
+                MessageBox.Show("Usuario o contraseña incorrectos");
             }
+            conexion.Close();
+ 
+
         }
 
         private void txtUser_KeyPress(object sender, KeyPressEventArgs e)
@@ -96,6 +108,7 @@ namespace ProyectoSedima
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
                 FrmReporte.Focus();
         }
+
 
         private void txtUser_TextChanged(object sender, EventArgs e)
         {
