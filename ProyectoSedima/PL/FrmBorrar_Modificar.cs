@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -59,15 +61,38 @@ namespace ProyectoSedima.PL
                 {
                     lst = lst.Where(d => d.STATUS.Contains(txtStatus.Text.Trim()));
                 }
-                if (dtpFec.Text != null)
+                if (dtpFec.Text != null && dtpFinal.Text != null)
                 {
-                    DateTime fecha = DateTime.Parse(dtpFec.Text);
-                    lst = lst.Where(d => d.FecRegistro == fecha);
+                    DateTime fechaDesde = DateTime.Parse(dtpFec.Text);
+                    DateTime fechaHasta = DateTime.Parse(dtpFinal.Text);
+
+                    // Realizar la consulta utilizando LINQ
+                    lst = lst.Where(r => DbFunctions.TruncateTime(r.FecRegistro) >= fechaDesde.Date
+                                    && DbFunctions.TruncateTime(r.FecRegistro) <= fechaHasta.Date);
+                        
+                    /*DateTime fecha = DateTime.Parse(dtpFec.Text);
+                    DateTime fecha2 = DateTime.Parse(dtpFinal.Text);
+                    lst = lst.Where(d => d.FecRegistro == fecha);*/
+                    
                 }
 
 
 
                 dgvReportes.DataSource = lst.ToList();
+                dgvReportes.Columns["IdReporte"].DisplayIndex = 0;
+                dgvReportes.Columns["Cliente"].DisplayIndex = 1;
+                dgvReportes.Columns["Caldera"].DisplayIndex = 2;
+                dgvReportes.Columns["Modelo"].DisplayIndex = 3;
+                dgvReportes.Columns["Serie"].DisplayIndex = 4;
+                dgvReportes.Columns["Ciudad"].DisplayIndex = 5;
+                dgvReportes.Columns["FecRegistro"].DisplayIndex = 6;
+                dgvReportes.Columns["FA"].DisplayIndex = 7;
+                dgvReportes.Columns["FG"].DisplayIndex = 8;
+                dgvReportes.Columns["PC"].DisplayIndex = 9;
+                dgvReportes.Columns["STATUS"].DisplayIndex = 10;
+                dgvReportes.Columns["Detalle"].DisplayIndex= 11;
+                
+
             }
                 
         }
@@ -88,6 +113,18 @@ namespace ProyectoSedima.PL
         private void btnFiltro_Click(object sender, EventArgs e)
         {
             Refresh();
+        }
+
+        int ID;
+        private void dgvReportes_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvReportes.Columns[e.ColumnIndex].Name == "Detalle")
+            {
+                ID = Convert.ToInt32(dgvReportes.CurrentRow.Cells["IdReporte"].Value.ToString());
+                FrmEditar frmEditar = new FrmEditar(ID);
+                frmEditar.ShowDialog();
+                Refresh();
+            }
         }
     }
 }

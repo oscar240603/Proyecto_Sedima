@@ -123,6 +123,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EntityDeploy Include="Model\DB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -160,6 +161,11 @@
       <DependentUpon>DB.edmx</DependentUpon>
       <LastGenOutput>DB.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\detalle.jpg" />
+    <None Include="Resources\OIP.jpeg" />
+    <None Include="Resources\icono-guardar-todo-11563528039tgosgddhyw.png" />
+    <None Include="Resources\icono_guardar.jpeg" />
+    <None Include="Resources\detalles.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

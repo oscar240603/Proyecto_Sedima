@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoSedima.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,44 @@ namespace ProyectoSedima.PL
         public FrmEditar()
         {
             InitializeComponent();
+        }
+
+        public FrmEditar(int pId)
+        {
+            InitializeComponent();
+            Buscar(pId);
+        }
+
+        private void Buscar(int pId)
+        {
+            try
+            {
+                using(Model.SEDIMAEntities db = new Model.SEDIMAEntities())
+                {
+                    var lst = db.REPORTES.Where(p => p.IdReporte == pId).ToList();
+                    if(lst.Count > 0)
+                    {
+                        foreach(REPORTES reporte in lst)
+                        {
+                            txtID.Text = reporte.IdReporte.ToString();
+                            txtCliente.Text = reporte.Cliente;
+                            txtCaldera.Text = reporte.Caldera;
+                            txtCaldera.Text = reporte.Caldera;
+                            txtFecha.Text = reporte.FecRegistro.ToString();
+                            txtModelo.Text = reporte.Modelo;
+                            txtSerie.Text = reporte.Serie;
+                            txtCiudad.Text = reporte.Ciudad;
+                            txtFA.Text = reporte.FA;
+                            txtFG.Text = reporte.FG;
+                            txtPC.Text = reporte.PC;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void FrmEditar_Load(object sender, EventArgs e)

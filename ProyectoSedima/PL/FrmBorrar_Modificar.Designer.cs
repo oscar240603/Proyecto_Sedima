@@ -35,17 +35,25 @@
             this.txtStatus = new System.Windows.Forms.TextBox();
             this.dtpFec = new System.Windows.Forms.DateTimePicker();
             this.btnFiltro = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Detalle = new System.Windows.Forms.DataGridViewImageColumn();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dtpFinal = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReportes)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvReportes
             // 
             this.dgvReportes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvReportes.Location = new System.Drawing.Point(42, 101);
+            this.dgvReportes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Detalle});
+            this.dgvReportes.Location = new System.Drawing.Point(61, 101);
             this.dgvReportes.Name = "dgvReportes";
             this.dgvReportes.RowHeadersWidth = 51;
-            this.dgvReportes.Size = new System.Drawing.Size(692, 309);
+            this.dgvReportes.Size = new System.Drawing.Size(673, 309);
             this.dgvReportes.TabIndex = 0;
+            this.dgvReportes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReportes_CellClick);
             this.dgvReportes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReportes_CellDoubleClick);
             // 
             // txtCliente
@@ -83,14 +91,14 @@
             // dtpFec
             // 
             this.dtpFec.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFec.Location = new System.Drawing.Point(442, 53);
+            this.dtpFec.Location = new System.Drawing.Point(369, 53);
             this.dtpFec.Name = "dtpFec";
             this.dtpFec.Size = new System.Drawing.Size(102, 20);
             this.dtpFec.TabIndex = 5;
             // 
             // btnFiltro
             // 
-            this.btnFiltro.Location = new System.Drawing.Point(646, 47);
+            this.btnFiltro.Location = new System.Drawing.Point(629, 50);
             this.btnFiltro.Name = "btnFiltro";
             this.btnFiltro.Size = new System.Drawing.Size(75, 23);
             this.btnFiltro.TabIndex = 6;
@@ -98,11 +106,54 @@
             this.btnFiltro.UseVisualStyleBackColor = true;
             this.btnFiltro.Click += new System.EventHandler(this.btnFiltro_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(377, 37);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(82, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "FECHA INICIAL";
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.HeaderText = "Detalle";
+            this.dataGridViewImageColumn1.Image = global::ProyectoSedima.Properties.Resources.detalle;
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            // 
+            // Detalle
+            // 
+            this.Detalle.HeaderText = "Detalle";
+            this.Detalle.Image = global::ProyectoSedima.Properties.Resources.detalle;
+            this.Detalle.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Detalle.Name = "Detalle";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(506, 37);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "FECHA FINAL";
+            // 
+            // dtpFinal
+            // 
+            this.dtpFinal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFinal.Location = new System.Drawing.Point(498, 53);
+            this.dtpFinal.Name = "dtpFinal";
+            this.dtpFinal.Size = new System.Drawing.Size(102, 20);
+            this.dtpFinal.TabIndex = 8;
+            // 
             // FrmBorrar_Modificar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.dtpFinal);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnFiltro);
             this.Controls.Add(this.dtpFec);
             this.Controls.Add(this.label2);
@@ -128,5 +179,10 @@
         private System.Windows.Forms.TextBox txtStatus;
         private System.Windows.Forms.DateTimePicker dtpFec;
         private System.Windows.Forms.Button btnFiltro;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridViewImageColumn Detalle;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker dtpFinal;
     }
 }
