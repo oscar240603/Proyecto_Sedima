@@ -1125,9 +1125,10 @@
             // 
             // btnInsertar
             // 
-            this.btnInsertar.Location = new System.Drawing.Point(217, 1105);
+            this.btnInsertar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInsertar.Location = new System.Drawing.Point(194, 1037);
             this.btnInsertar.Name = "btnInsertar";
-            this.btnInsertar.Size = new System.Drawing.Size(75, 23);
+            this.btnInsertar.Size = new System.Drawing.Size(109, 23);
             this.btnInsertar.TabIndex = 112;
             this.btnInsertar.Text = "Agregar";
             this.btnInsertar.UseVisualStyleBackColor = true;
@@ -1135,7 +1136,7 @@
             // 
             // Cancelar
             // 
-            this.Cancelar.Location = new System.Drawing.Point(337, 1105);
+            this.Cancelar.Location = new System.Drawing.Point(341, 1037);
             this.Cancelar.Name = "Cancelar";
             this.Cancelar.Size = new System.Drawing.Size(77, 23);
             this.Cancelar.TabIndex = 114;
@@ -1145,7 +1146,7 @@
             // 
             // btnBorrarModificar
             // 
-            this.btnBorrarModificar.Location = new System.Drawing.Point(438, 1105);
+            this.btnBorrarModificar.Location = new System.Drawing.Point(439, 1037);
             this.btnBorrarModificar.Name = "btnBorrarModificar";
             this.btnBorrarModificar.Size = new System.Drawing.Size(140, 23);
             this.btnBorrarModificar.TabIndex = 116;

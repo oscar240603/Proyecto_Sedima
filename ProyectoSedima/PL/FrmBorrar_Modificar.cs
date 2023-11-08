@@ -13,7 +13,7 @@ namespace ProyectoSedima.PL
 {
     public partial class FrmBorrar_Modificar : Form
     {
-        static string conexionstring = "Server=localhost\\SQLEXPRESS;Database=SEDIMA;Trusted_Connection=True;";  //"Data Source=LAPTOP-OSCAR202\\SQLEXPRESS;Initial Catalog=SEDIMA;Integrated Security=True";
+        static string conexionstring = "Data Source=LAPTOP-OSCAR202\\SQLEXPRESS;Initial Catalog=SEDIMA;Integrated Security=True";
         SqlConnection conexion = new SqlConnection(conexionstring);
         public FrmBorrar_Modificar()
         {
@@ -27,8 +27,7 @@ namespace ProyectoSedima.PL
             DataTable dt = new DataTable();
             adaptador.Fill(dt);
             dgvReportes.DataSource = dt;
-            dgvReportes.Columns["Editar"].Width = 75;
-            dgvReportes.Columns["Eliminar"].Width = 75;
+            
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)
@@ -46,6 +45,8 @@ namespace ProyectoSedima.PL
             FrmEditar frmedit = new FrmEditar();
             this.Hide();
             frmedit.Show();
+
+
 
 
         }
