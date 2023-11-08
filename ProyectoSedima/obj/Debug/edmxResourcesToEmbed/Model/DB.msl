@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SEDIMAModelStoreContainer" CdmEntityContainer="SEDIMAEntities">
+    <EntitySetMapping Name="REPORTES">
+      <EntityTypeMapping TypeName="SEDIMAModel.REPORTES">
+        <MappingFragment StoreEntitySet="REPORTES">
+          <ScalarProperty Name="IdReporte" ColumnName="IdReporte" />
+          <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+          <ScalarProperty Name="Caldera" ColumnName="Caldera" />
+          <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+          <ScalarProperty Name="Serie" ColumnName="Serie" />
+          <ScalarProperty Name="Ciudad" ColumnName="Ciudad" />
+          <ScalarProperty Name="FecRegistro" ColumnName="FecRegistro" />
+          <ScalarProperty Name="FA" ColumnName="FA" />
+          <ScalarProperty Name="FG" ColumnName="FG" />
+          <ScalarProperty Name="PC" ColumnName="PC" />
+          <ScalarProperty Name="ABN" ColumnName="ABN" />
+          <ScalarProperty Name="ANN" ColumnName="ANN" />
+          <ScalarProperty Name="VN" ColumnName="VN" />
+          <ScalarProperty Name="FCN" ColumnName="FCN" />
+          <ScalarProperty Name="PF" ColumnName="PF" />
+          <ScalarProperty Name="PDC" ColumnName="PDC" />
+          <ScalarProperty Name="MC" ColumnName="MC" />
+          <ScalarProperty Name="VV" ColumnName="VV" />
+          <ScalarProperty Name="VG" ColumnName="VG" />
+          <ScalarProperty Name="BG" ColumnName="BG" />
+          <ScalarProperty Name="PI" ColumnName="PI" />
+          <ScalarProperty Name="EFP" ColumnName="EFP" />
+          <ScalarProperty Name="FF" ColumnName="FF" />
+          <ScalarProperty Name="BNA" ColumnName="BNA" />
+          <ScalarProperty Name="CPV" ColumnName="CPV" />
+          <ScalarProperty Name="LQ" ColumnName="LQ" />
+          <ScalarProperty Name="CE" ColumnName="CE" />
+          <ScalarProperty Name="Chimenea" ColumnName="Chimenea" />
+          <ScalarProperty Name="Agua_tanque" ColumnName="Agua_tanque" />
+          <ScalarProperty Name="EC" ColumnName="EC" />
+          <ScalarProperty Name="SC" ColumnName="SC" />
+          <ScalarProperty Name="VAP" ColumnName="VAP" />
+          <ScalarProperty Name="AA" ColumnName="AA" />
+          <ScalarProperty Name="AC" ColumnName="AC" />
+          <ScalarProperty Name="BAA" ColumnName="BAA" />
+          <ScalarProperty Name="BAD" ColumnName="BAD" />
+          <ScalarProperty Name="MV" ColumnName="MV" />
+          <ScalarProperty Name="Min_Co2" ColumnName="Min_Co2" />
+          <ScalarProperty Name="Min_O2" ColumnName="Min_O2" />
+          <ScalarProperty Name="Min_Ppm" ColumnName="Min_Ppm" />
+          <ScalarProperty Name="Min_Ex_Aire" ColumnName="Min_Ex_Aire" />
+          <ScalarProperty Name="Med_Co2" ColumnName="Med_Co2" />
+          <ScalarProperty Name="Med_O2" ColumnName="Med_O2" />
+          <ScalarProperty Name="Med_Ppm" ColumnName="Med_Ppm" />
+          <ScalarProperty Name="Med_Ex_Aire" ColumnName="Med_Ex_Aire" />
+          <ScalarProperty Name="Max_Co2" ColumnName="Max_Co2" />
+          <ScalarProperty Name="Max_O2" ColumnName="Max_O2" />
+          <ScalarProperty Name="Max_Ppm" ColumnName="Max_Ppm" />
+          <ScalarProperty Name="Max_Ex_Aire" ColumnName="Max_Ex_Aire" />
+          <ScalarProperty Name="Comentarios" ColumnName="Comentarios" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

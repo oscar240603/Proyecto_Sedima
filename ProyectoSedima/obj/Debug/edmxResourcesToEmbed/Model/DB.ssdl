@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SEDIMAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="REPORTES">
+    <Key>
+      <PropertyRef Name="IdReporte" />
+    </Key>
+    <Property Name="IdReporte" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cliente" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Caldera" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Modelo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Serie" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Ciudad" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FecRegistro" Type="datetime" Nullable="false" />
+    <Property Name="FA" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="FG" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PC" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ABN" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ANN" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="VN" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="FCN" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PF" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PDC" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MC" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="VV" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="VG" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="BG" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PI" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="EFP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="FF" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="BNA" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CPV" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="LQ" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CE" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Chimenea" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Agua_tanque" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="EC" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="SC" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="VAP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="AA" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="AC" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="BAA" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="BAD" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MV" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Min_Co2" Type="varchar" MaxLength="10" />
+    <Property Name="Min_O2" Type="varchar" MaxLength="10" />
+    <Property Name="Min_Ppm" Type="varchar" MaxLength="10" />
+    <Property Name="Min_Ex_Aire" Type="varchar" MaxLength="10" />
+    <Property Name="Med_Co2" Type="varchar" MaxLength="10" />
+    <Property Name="Med_O2" Type="varchar" MaxLength="10" />
+    <Property Name="Med_Ppm" Type="varchar" MaxLength="10" />
+    <Property Name="Med_Ex_Aire" Type="varchar" MaxLength="10" />
+    <Property Name="Max_Co2" Type="varchar" MaxLength="10" />
+    <Property Name="Max_O2" Type="varchar" MaxLength="10" />
+    <Property Name="Max_Ppm" Type="varchar" MaxLength="10" />
+    <Property Name="Max_Ex_Aire" Type="varchar" MaxLength="10" />
+    <Property Name="Comentarios" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="STATUS" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="SEDIMAModelStoreContainer">
+    <EntitySet Name="REPORTES" EntityType="Self.REPORTES" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

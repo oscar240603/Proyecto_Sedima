@@ -33,7 +33,6 @@
             this.txtCliente = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtFecha = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCiudad = new System.Windows.Forms.TextBox();
             this.txtCaldera = new System.Windows.Forms.TextBox();
@@ -142,6 +141,7 @@
             this.label59 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dtmFecha = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -183,20 +183,6 @@
             this.label3.Size = new System.Drawing.Size(55, 15);
             this.label3.TabIndex = 3;
             this.label3.Text = "FECHA:";
-            // 
-            // txtFecha
-            // 
-            this.txtFecha.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtFecha.Location = new System.Drawing.Point(495, 162);
-            this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(109, 20);
-            this.txtFecha.TabIndex = 4;
-            this.txtFecha.Text = "YYYY/MM/DD";
-            this.txtFecha.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtFecha.TextChanged += new System.EventHandler(this.txtFecha_TextChanged);
-            this.txtFecha.Enter += new System.EventHandler(this.txtFecha_Enter);
-            this.txtFecha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFecha_KeyPress);
-            this.txtFecha.Leave += new System.EventHandler(this.txtFecha_Leave);
             // 
             // label4
             // 
@@ -1211,6 +1197,14 @@
             this.textBox1.Size = new System.Drawing.Size(513, 20);
             this.textBox1.TabIndex = 122;
             // 
+            // dtmFecha
+            // 
+            this.dtmFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtmFecha.Location = new System.Drawing.Point(495, 163);
+            this.dtmFecha.Name = "dtmFecha";
+            this.dtmFecha.Size = new System.Drawing.Size(109, 20);
+            this.dtmFecha.TabIndex = 123;
+            // 
             // FrmReportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1220,6 +1214,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ClientSize = new System.Drawing.Size(851, 511);
+            this.Controls.Add(this.dtmFecha);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label59);
@@ -1328,7 +1323,6 @@
             this.Controls.Add(this.txtCaldera);
             this.Controls.Add(this.txtCiudad);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtFecha);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCliente);
@@ -1350,7 +1344,6 @@
         private System.Windows.Forms.TextBox txtCliente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtFecha;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtCiudad;
         private System.Windows.Forms.TextBox txtCaldera;
@@ -1459,5 +1452,6 @@
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DateTimePicker dtmFecha;
     }
 }

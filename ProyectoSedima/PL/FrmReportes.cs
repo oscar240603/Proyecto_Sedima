@@ -49,7 +49,7 @@ namespace ProyectoSedima.PL
         {
             conexion.Open();
             string cadena = "INSERT INTO [dbo].[REPORTES]([Cliente],[Caldera],[Modelo],[Serie],[Ciudad],[FecRegistro],[FA],[FG],[PC],[ABN],[ANN],[VN],[FCN],[PF],[PDC],[MC],[VV],[VG],[BG],[PI],[EFP],[FF],[BNA],[CPV],[LQ],[CE],[Chimenea],[Agua_tanque],[EC],[SC],[VAP],[AA],[AC],[BAA],[BAD],[MV],[Min_Co2],[Min_O2],[Min_Ppm],[Min_Ex_Aire],[Med_Co2],[Med_O2],[Med_Ppm],[Med_Ex_Aire],[Max_Co2],[Max_O2],[Max_Ppm],[Max_Ex_Aire],[Comentarios])" +
-                "VALUES('"+txtCliente.Text.ToUpper()+"','"+txtCaldera.Text.ToUpper() + "','"+txtModelo.Text.ToUpper() + "','"+txtSerie.Text.ToUpper() + "','"+txtCiudad.Text.ToUpper() + "','"+txtFecha.Text.ToUpper() + "','"+txtFA.Text.ToUpper() + "','"+txtFG.Text.ToUpper() + "','"+txtPC.Text.ToUpper() + "','"+txtABN.Text.ToUpper() + "','"+txtANN.Text.ToUpper() + "','"+txtVN.Text.ToUpper() + "','"+txtFCN.Text.ToUpper() + "','"+txtPF.Text.ToUpper() + "','"+txtPDC.Text.ToUpper() + "','"+txtMC.Text.ToUpper() + "','"+txtVV.Text.ToUpper() + "','"+txtVG.Text.ToUpper() + "','"+txtBG.Text.ToUpper() + "','"+txtPI.Text.ToUpper() + "','"+txtEFP.Text.ToUpper() + "','"+txtFF.Text.ToUpper() + "','"+txtBNA.Text.ToUpper() + "','"+txtCPV.Text.ToUpper() + "','"+txtLQ.Text.ToUpper() + "','"+txtCE.Text.ToUpper() + "','"+txtChimenea.Text.ToUpper() + "','"+txtAguaTanque.Text.ToUpper() + "','"+txtEC.Text.ToUpper() + "','"+txtSC.Text.ToUpper() + "','"+txtVAP.Text.ToUpper() + "','"+txtAA.Text.ToUpper() + "','"+txtAC.Text.ToUpper() + "','"+txtBAA.Text.ToUpper() + "','"+txtBAD.Text.ToUpper() + "','"+txtMV.Text.ToUpper() + "','"+txtMinCo2.Text.ToUpper() + "','"+txtMinO2.Text.ToUpper() + "','"+txtMinPpm.Text.ToUpper() + "','"+txtMinEx.Text.ToUpper() + "','"+txtMedCo2.Text.ToUpper() + "','"+txtMedO2.Text.ToUpper() + "','"+txtMedPpm.Text.ToUpper() + "','"+txtMedEx.Text.ToUpper() + "','"+txtMaxCo2.Text.ToUpper() + "','"+txtMaxO2.Text.ToUpper() + "','"+txtMaxPpm.Text.ToUpper() + "','"+txtMaxEx.Text.ToUpper() + "','"+txtComentarios.Text.ToUpper() + "')";
+                "VALUES('"+txtCliente.Text.ToUpper()+"','"+txtCaldera.Text.ToUpper() + "','"+txtModelo.Text.ToUpper() + "','"+txtSerie.Text.ToUpper() + "','"+txtCiudad.Text.ToUpper() + "','"+dtmFecha.Value + "','"+txtFA.Text.ToUpper() + "','"+txtFG.Text.ToUpper() + "','"+txtPC.Text.ToUpper() + "','"+txtABN.Text.ToUpper() + "','"+txtANN.Text.ToUpper() + "','"+txtVN.Text.ToUpper() + "','"+txtFCN.Text.ToUpper() + "','"+txtPF.Text.ToUpper() + "','"+txtPDC.Text.ToUpper() + "','"+txtMC.Text.ToUpper() + "','"+txtVV.Text.ToUpper() + "','"+txtVG.Text.ToUpper() + "','"+txtBG.Text.ToUpper() + "','"+txtPI.Text.ToUpper() + "','"+txtEFP.Text.ToUpper() + "','"+txtFF.Text.ToUpper() + "','"+txtBNA.Text.ToUpper() + "','"+txtCPV.Text.ToUpper() + "','"+txtLQ.Text.ToUpper() + "','"+txtCE.Text.ToUpper() + "','"+txtChimenea.Text.ToUpper() + "','"+txtAguaTanque.Text.ToUpper() + "','"+txtEC.Text.ToUpper() + "','"+txtSC.Text.ToUpper() + "','"+txtVAP.Text.ToUpper() + "','"+txtAA.Text.ToUpper() + "','"+txtAC.Text.ToUpper() + "','"+txtBAA.Text.ToUpper() + "','"+txtBAD.Text.ToUpper() + "','"+txtMV.Text.ToUpper() + "','"+txtMinCo2.Text.ToUpper() + "','"+txtMinO2.Text.ToUpper() + "','"+txtMinPpm.Text.ToUpper() + "','"+txtMinEx.Text.ToUpper() + "','"+txtMedCo2.Text.ToUpper() + "','"+txtMedO2.Text.ToUpper() + "','"+txtMedPpm.Text.ToUpper() + "','"+txtMedEx.Text.ToUpper() + "','"+txtMaxCo2.Text.ToUpper() + "','"+txtMaxO2.Text.ToUpper() + "','"+txtMaxPpm.Text.ToUpper() + "','"+txtMaxEx.Text.ToUpper() + "','"+txtComentarios.Text.ToUpper() + "')";
 
             SqlCommand comando = new SqlCommand(cadena,conexion);
             comando.ExecuteNonQuery();
@@ -61,7 +61,6 @@ namespace ProyectoSedima.PL
         private void Cancelar_Click(object sender, EventArgs e)
         {
             txtCliente.Clear();
-            txtFecha.Clear();
             txtCiudad.Clear();
             txtCaldera.Clear();
             txtModelo.Clear();
@@ -135,22 +134,8 @@ namespace ProyectoSedima.PL
 
         }
 
-        private void txtFecha_Enter(object sender, EventArgs e)
-        {
-            if(txtFecha.Text == "YYYY/MM/DD")
-            {
-                txtFecha.Text = "";
-            }
-        }
+        
 
-        private void txtFecha_Leave(object sender, EventArgs e)
-        {
-            if (txtFecha.Text == "")
-            {
-                txtFecha.Text = "YYYY/MM/DD";
-            }
-
-        }
 
         private void txtFA_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -694,7 +679,7 @@ namespace ProyectoSedima.PL
         private void txtCaldera_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
-                txtFecha.Focus();
+                dtmFecha.Focus();
         }
 
         private void txtFecha_TextChanged(object sender, EventArgs e)

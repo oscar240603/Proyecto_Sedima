@@ -81,3 +81,8 @@ C:\Users\diego\Source\Repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSed
 C:\Users\diego\Source\Repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSedima.csproj.CoreCompileInputs.cache
 C:\Users\diego\Source\Repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSedima.exe
 C:\Users\diego\Source\Repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSedima.pdb
+C:\Users\Oscar\source\repos\Proyecto_Sedima\ProyectoSedima\bin\Debug\EntityFramework.dll
+C:\Users\Oscar\source\repos\Proyecto_Sedima\ProyectoSedima\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Oscar\source\repos\Proyecto_Sedima\ProyectoSedima\bin\Debug\EntityFramework.xml
+C:\Users\Oscar\source\repos\Proyecto_Sedima\ProyectoSedima\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Oscar\source\repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSedima.csproj.CopyComplete
