@@ -49,6 +49,45 @@ namespace ProyectoSedima.PL
                             txtFA.Text = reporte.FA;
                             txtFG.Text = reporte.FG;
                             txtPC.Text = reporte.PC;
+                            txtABN.Text = reporte.ABN;
+                            txtANN.Text = reporte.ANN;
+                            txtVN.Text = reporte.VN;
+                            txtFCN.Text = reporte.FCN;
+                            txtPF.Text = reporte.PF;
+                            txtVG.Text = reporte.VG;
+                            txtPDC.Text = reporte.PDC;
+                            txtMC.Text = reporte.MC;
+                            txtVG.Text = reporte.VG;
+                            txtBG.Text = reporte.BG;
+                            txtPI.Text = reporte.PI;
+                            txtEFP.Text = reporte.EFP;
+                            txtFF.Text = reporte.FF;
+                            txtBNA.Text = reporte.BNA;
+                            txtCPV.Text = reporte.CPV;
+                            txtLQ.Text = reporte.LQ;
+                            txtCE.Text = reporte.CE;
+                            txtChimenea.Text = reporte.Chimenea;
+                            txtAguaTanque.Text = reporte.Agua_tanque;
+                            txtEC.Text = reporte.EC;
+                            txtVAP.Text = reporte.VAP;
+                            txtAA.Text = reporte.AA;
+                            txtAC.Text = reporte.AC;
+                            txtBAA.Text = reporte.BAA;
+                            txtBAD.Text = reporte.BAD;
+                            txtMV.Text = reporte.MV;
+                            txtMinCo2.Text = reporte.Min_Co2;
+                            txtMinO2.Text = reporte.Min_O2;
+                            txtMinPpm.Text = reporte.Min_Ppm;
+                            txtMinEx.Text = reporte.Min_Ex_Aire;
+                            txtMedCo2.Text = reporte.Med_Co2;
+                            txtMedO2.Text = reporte.Med_O2;
+                            txtMedPpm.Text = reporte.Med_Ppm;
+                            txtMedEx.Text = reporte.Med_Ex_Aire;
+                            txtMaxCo2.Text = reporte.Max_Co2;
+                            txtMaxO2.Text = reporte.Max_O2;
+                            txtMaxPpm.Text = reporte.Max_Ppm;
+                            txtMaxEx.Text = reporte.Max_Ex_Aire;
+                            txtComentarios.Text = reporte.Comentarios;
                         }
                     }
                 }
