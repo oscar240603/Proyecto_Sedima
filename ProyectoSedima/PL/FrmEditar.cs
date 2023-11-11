@@ -20,6 +20,8 @@ namespace ProyectoSedima.PL
         public FrmEditar()
         {
             InitializeComponent();
+
+            this.MaximizeBox = false;
         }
 
         public FrmEditar(int pId)
@@ -104,7 +106,7 @@ namespace ProyectoSedima.PL
 
         private void FrmEditar_Load(object sender, EventArgs e)
         {
-            
+            this.MaximizeBox = false;
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)

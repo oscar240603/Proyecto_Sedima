@@ -28,12 +28,13 @@ namespace ProyectoSedima.PL
         private void FrmBorrar_Modificar_Load(object sender, EventArgs e)
         {
             Refresh();
+            this.MaximizeBox = false;
             /*string consulta = "Select * from REPORTES";
             SqlDataAdapter adaptador = new SqlDataAdapter(consulta, conexion);
             DataTable dt = new DataTable();
             adaptador.Fill(dt);
             dgvReportes.DataSource = dt;*/
-            
+
         }
 
         private void Refresh()

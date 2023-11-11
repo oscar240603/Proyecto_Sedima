@@ -10,12 +10,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.Reflection.Emit;
+using System.Drawing.Drawing2D;
 //using ProyectoSedima.DAL;
 
 namespace ProyectoSedima.PL
 {
     public partial class FrmReportes : Form
     {
+
         static string conexionstring = "Server = localhost\\SQLEXPRESS;Database=SEDIMA;Trusted_Connection=True";                  //"Data Source=LAPTOP-HDVPN48A\\SQLEXPRESS;Initial Catalog=SEDIMA;Integrated Security=True";
         SqlConnection conexion = new SqlConnection(conexionstring);
 
@@ -28,7 +30,12 @@ namespace ProyectoSedima.PL
         public FrmReportes()
         {
             InitializeComponent();
+
+            this.MaximizeBox = false;
+
+
         }
+        
 
         private void frmReportes_Load(object sender, EventArgs e)
         {
