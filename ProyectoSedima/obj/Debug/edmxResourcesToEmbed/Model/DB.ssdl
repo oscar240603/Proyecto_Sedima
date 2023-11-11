@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="SEDIMAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="EMPLEADO">
+    <Key>
+      <PropertyRef Name="IdEmpleado" />
+    </Key>
+    <Property Name="IdEmpleado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Usuario" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Contraseña" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FecRegistro" Type="datetime" Nullable="false" />
+  </EntityType>
   <EntityType Name="REPORTES">
     <Key>
       <PropertyRef Name="IdReporte" />
@@ -36,6 +45,7 @@
     <Property Name="EC" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="SC" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="VAP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ARR" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="AA" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="AC" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="BAA" Type="varchar" MaxLength="20" Nullable="false" />
@@ -57,6 +67,7 @@
     <Property Name="STATUS" Type="varchar" MaxLength="20" Nullable="false" />
   </EntityType>
   <EntityContainer Name="SEDIMAModelStoreContainer">
+    <EntitySet Name="EMPLEADO" EntityType="Self.EMPLEADO" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="REPORTES" EntityType="Self.REPORTES" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

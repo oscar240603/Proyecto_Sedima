@@ -142,6 +142,10 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.label60 = new System.Windows.Forms.Label();
             this.btnModificar = new System.Windows.Forms.Button();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.txtArranque = new System.Windows.Forms.TextBox();
+            this.label64 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -214,7 +218,7 @@
             // 
             // txtVAP
             // 
-            this.txtVAP.Location = new System.Drawing.Point(660, 439);
+            this.txtVAP.Location = new System.Drawing.Point(689, 440);
             this.txtVAP.Name = "txtVAP";
             this.txtVAP.Size = new System.Drawing.Size(51, 20);
             this.txtVAP.TabIndex = 158;
@@ -1202,6 +1206,44 @@
             this.btnModificar.UseVisualStyleBackColor = true;
             this.btnModificar.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.Location = new System.Drawing.Point(717, 385);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(49, 15);
+            this.label61.TabIndex = 237;
+            this.label61.Text = "Kg/cm2";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.Location = new System.Drawing.Point(717, 414);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(41, 15);
+            this.label62.TabIndex = 238;
+            this.label62.Text = "oz/m2";
+            // 
+            // txtArranque
+            // 
+            this.txtArranque.Location = new System.Drawing.Point(632, 440);
+            this.txtArranque.Name = "txtArranque";
+            this.txtArranque.Size = new System.Drawing.Size(51, 20);
+            this.txtArranque.TabIndex = 239;
+            this.txtArranque.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtArranque_KeyPress);
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.Location = new System.Drawing.Point(746, 445);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(49, 15);
+            this.label64.TabIndex = 241;
+            this.label64.Text = "Kg/cm2";
+            // 
             // FrmEditar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1209,6 +1251,10 @@
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(0, 50);
             this.ClientSize = new System.Drawing.Size(834, 511);
+            this.Controls.Add(this.label64);
+            this.Controls.Add(this.txtArranque);
+            this.Controls.Add(this.label62);
+            this.Controls.Add(this.label61);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.label60);
             this.Controls.Add(this.txtID);
@@ -1446,5 +1492,9 @@
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.TextBox txtArranque;
+        private System.Windows.Forms.Label label64;
     }
 }

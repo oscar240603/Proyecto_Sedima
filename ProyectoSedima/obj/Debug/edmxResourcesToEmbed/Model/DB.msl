@@ -4,6 +4,7 @@
     <EntitySetMapping Name="REPORTES">
       <EntityTypeMapping TypeName="SEDIMAModel.REPORTES">
         <MappingFragment StoreEntitySet="REPORTES">
+          <ScalarProperty Name="ARR" ColumnName="ARR" />
           <ScalarProperty Name="IdReporte" ColumnName="IdReporte" />
           <ScalarProperty Name="Cliente" ColumnName="Cliente" />
           <ScalarProperty Name="Caldera" ColumnName="Caldera" />
@@ -55,6 +56,16 @@
           <ScalarProperty Name="Max_Ex_Aire" ColumnName="Max_Ex_Aire" />
           <ScalarProperty Name="Comentarios" ColumnName="Comentarios" />
           <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPLEADO">
+      <EntityTypeMapping TypeName="SEDIMAModel.EMPLEADO">
+        <MappingFragment StoreEntitySet="EMPLEADO">
+          <ScalarProperty Name="FecRegistro" ColumnName="FecRegistro" />
+          <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

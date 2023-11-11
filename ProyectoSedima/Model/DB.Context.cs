@@ -26,5 +26,6 @@ namespace ProyectoSedima.Model
         }
     
         public virtual DbSet<REPORTES> REPORTES { get; set; }
+        public virtual DbSet<EMPLEADO> EMPLEADO { get; set; }
     }
 }

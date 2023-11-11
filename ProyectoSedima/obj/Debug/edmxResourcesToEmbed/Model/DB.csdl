@@ -55,8 +55,19 @@
     <Property Name="Max_Ex_Aire" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="Comentarios" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="STATUS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ARR" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityContainer Name="SEDIMAEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="REPORTES" EntityType="Self.REPORTES" />
+    <EntitySet Name="EMPLEADO" EntityType="SEDIMAModel.EMPLEADO" />
   </EntityContainer>
+  <EntityType Name="EMPLEADO">
+    <Key>
+      <PropertyRef Name="IdEmpleado" />
+    </Key>
+    <Property Name="IdEmpleado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Usuario" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Contraseña" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FecRegistro" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
 </Schema>

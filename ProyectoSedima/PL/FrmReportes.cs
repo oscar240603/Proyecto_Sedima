@@ -47,15 +47,18 @@ namespace ProyectoSedima.PL
 
         private void btnInsertar_Click(object sender, EventArgs e)
         {
-            
+            DateTime FechaRegis = dtmFecha.Value;
+            string fechaFormateada = FechaRegis.ToString("yyyy-MM-dd");
+
             conexion.Open();
-            string cadena = "INSERT INTO [dbo].[REPORTES]([Cliente],[Caldera],[Modelo],[Serie],[Ciudad],[FecRegistro],[FA],[FG],[PC],[ABN],[ANN],[VN],[FCN],[PF],[PDC],[MC],[VV],[VG],[BG],[PI],[EFP],[FF],[BNA],[CPV],[LQ],[CE],[Chimenea],[Agua_tanque],[EC],[SC],[VAP],[AA],[AC],[BAA],[BAD],[MV],[Min_Co2],[Min_O2],[Min_Ppm],[Min_Ex_Aire],[Med_Co2],[Med_O2],[Med_Ppm],[Med_Ex_Aire],[Max_Co2],[Max_O2],[Max_Ppm],[Max_Ex_Aire],[Comentarios])" +
-                "VALUES('" + txtCliente.Text.ToUpper() +"','"+txtCaldera.Text.ToUpper() + "','"+txtModelo.Text.ToUpper() + "','"+txtSerie.Text.ToUpper() + "','"+txtCiudad.Text.ToUpper() + "','"+txtFA.Text.ToUpper() + "','"+txtFA.Text.ToUpper() + "','"+txtFG.Text.ToUpper() + "','"+txtPC.Text.ToUpper() + "','"+txtABN.Text.ToUpper() + "','"+txtANN.Text.ToUpper() + "','"+txtVN.Text.ToUpper() + "','"+txtFCN.Text.ToUpper() + "','"+txtPF.Text.ToUpper() + "','"+txtPDC.Text.ToUpper() + "','"+txtMC.Text.ToUpper() + "','"+txtVV.Text.ToUpper() + "','"+txtVG.Text.ToUpper() + "','"+txtBG.Text.ToUpper() + "','"+txtPI.Text.ToUpper() + "','"+txtEFP.Text.ToUpper() + "','"+txtFF.Text.ToUpper() + "','"+txtBNA.Text.ToUpper() + "','"+txtCPV.Text.ToUpper() + "','"+txtLQ.Text.ToUpper() + "','"+txtCE.Text.ToUpper() + "','"+txtChimenea.Text.ToUpper() + "','"+txtAguaTanque.Text.ToUpper() + "','"+txtEC.Text.ToUpper() + "','"+txtSC.Text.ToUpper() + "','"+txtVAP.Text.ToUpper() + "','"+txtAA.Text.ToUpper() + "','"+txtAC.Text.ToUpper() + "','"+txtBAA.Text.ToUpper() + "','"+txtBAD.Text.ToUpper() + "','"+txtMV.Text.ToUpper() + "','"+txtMinCo2.Text.ToUpper() + "','"+txtMinO2.Text.ToUpper() + "','"+txtMinPpm.Text.ToUpper() + "','"+txtMinEx.Text.ToUpper() + "','"+txtMedCo2.Text.ToUpper() + "','"+txtMedO2.Text.ToUpper() + "','"+txtMedPpm.Text.ToUpper() + "','"+txtMedEx.Text.ToUpper() + "','"+txtMaxCo2.Text.ToUpper() + "','"+txtMaxO2.Text.ToUpper() + "','"+txtMaxPpm.Text.ToUpper() + "','"+txtMaxEx.Text.ToUpper() + "','"+txtComentarios.Text.ToUpper() + "')";
+            string cadena = "INSERT INTO [dbo].[REPORTES]([Cliente],[Caldera],[Modelo],[Serie],[Ciudad],[FecRegistro],[FA],[FG],[PC],[ABN],[ANN],[VN],[FCN],[PF],[PDC],[MC],[VV],[VG],[BG],[PI],[EFP],[FF],[BNA],[CPV],[LQ],[CE],[Chimenea],[Agua_tanque],[EC],[SC],[VAP],[ARR],[AA],[AC],[BAA],[BAD],[MV],[Min_Co2],[Min_O2],[Min_Ppm],[Min_Ex_Aire],[Med_Co2],[Med_O2],[Med_Ppm],[Med_Ex_Aire],[Max_Co2],[Max_O2],[Max_Ppm],[Max_Ex_Aire],[Comentarios])" +
+                "VALUES('" + txtCliente.Text.ToUpper() +"','"+txtCaldera.Text.ToUpper() + "','"+txtModelo.Text.ToUpper() + "','"+txtSerie.Text.ToUpper() + "','"+txtCiudad.Text.ToUpper() + "','"+fechaFormateada+"','"+txtFA.Text.ToUpper() + "','"+txtFG.Text.ToUpper() + "','"+txtPC.Text.ToUpper() + "','"+txtABN.Text.ToUpper() + "','"+txtANN.Text.ToUpper() + "','"+txtVN.Text.ToUpper() + "','"+txtFCN.Text.ToUpper() + "','"+txtPF.Text.ToUpper() + "','"+txtPDC.Text.ToUpper() + "','"+txtMC.Text.ToUpper() + "','"+txtVV.Text.ToUpper() + "','"+txtVG.Text.ToUpper() + "','"+txtBG.Text.ToUpper() + "','"+txtPI.Text.ToUpper() + "','"+txtEFP.Text.ToUpper() + "','"+txtFF.Text.ToUpper() + "','"+txtBNA.Text.ToUpper() + "','"+txtCPV.Text.ToUpper() + "','"+txtLQ.Text.ToUpper() + "','"+txtCE.Text.ToUpper() + "','"+txtChimenea.Text.ToUpper() + "','"+txtAguaTanque.Text.ToUpper() + "','"+txtEC.Text.ToUpper() + "','"+txtSC.Text.ToUpper() + "','"+txtVAP.Text.ToUpper() + "','"+txtArranque.Text.ToUpper() + "','" + txtAA.Text.ToUpper() + "','"+txtAC.Text.ToUpper() + "','"+txtBAA.Text.ToUpper() + "','"+txtBAD.Text.ToUpper() + "','"+txtMV.Text.ToUpper() + "','"+txtMinCo2.Text.ToUpper() + "','"+txtMinO2.Text.ToUpper() + "','"+txtMinPpm.Text.ToUpper() + "','"+txtMinEx.Text.ToUpper() + "','"+txtMedCo2.Text.ToUpper() + "','"+txtMedO2.Text.ToUpper() + "','"+txtMedPpm.Text.ToUpper() + "','"+txtMedEx.Text.ToUpper() + "','"+txtMaxCo2.Text.ToUpper() + "','"+txtMaxO2.Text.ToUpper() + "','"+txtMaxPpm.Text.ToUpper() + "','"+txtMaxEx.Text.ToUpper() + "','"+txtComentarios.Text.ToUpper() + "')";
 
             SqlCommand comando = new SqlCommand(cadena,conexion);
             comando.ExecuteNonQuery();
 
             MessageBox.Show("Se agrego correctamente");
+            conexion.Close();
 
         }
 
@@ -86,6 +89,7 @@ namespace ProyectoSedima.PL
             txtEC.Clear();
             txtSC.Clear();
             txtVAP.Clear();
+            txtArranque.Clear();
             txtAA.Clear();
             txtAC.Clear();
             txtBAA.Clear();
@@ -108,6 +112,7 @@ namespace ProyectoSedima.PL
             txtMaxCo2.Clear();
             txtMedEx.Clear();
             txtCE.Clear();
+            txtLQ.Clear();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -408,9 +413,9 @@ namespace ProyectoSedima.PL
 
         private void txtEC_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
             {
-                MessageBox.Show("Solo letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
                 return;
             }
@@ -420,21 +425,21 @@ namespace ProyectoSedima.PL
 
         private void txtSC_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
             {
-                MessageBox.Show("Solo letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
                 return;
             }
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
-                txtVAP.Focus();
+                txtArranque.Focus();
         }
 
         private void txtVAP_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
             {
-                MessageBox.Show("Solo letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
                 return;
             }
@@ -720,6 +725,23 @@ namespace ProyectoSedima.PL
         private void txtAA_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtCliente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtArranque_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+                txtVAP.Focus();
         }
     }
 }

@@ -30,10 +30,8 @@
         {
             this.dgvReportes = new System.Windows.Forms.DataGridView();
             this.Detalle = new System.Windows.Forms.DataGridViewImageColumn();
-            this.txtCliente = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtStatus = new System.Windows.Forms.TextBox();
             this.dtpFec = new System.Windows.Forms.DateTimePicker();
             this.btnFiltro = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -65,13 +63,6 @@
             this.Detalle.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.Detalle.Name = "Detalle";
             // 
-            // txtCliente
-            // 
-            this.txtCliente.Location = new System.Drawing.Point(85, 53);
-            this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(100, 20);
-            this.txtCliente.TabIndex = 1;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -89,13 +80,6 @@
             this.label2.Size = new System.Drawing.Size(50, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "STATUS";
-            // 
-            // txtStatus
-            // 
-            this.txtStatus.Location = new System.Drawing.Point(234, 53);
-            this.txtStatus.Name = "txtStatus";
-            this.txtStatus.Size = new System.Drawing.Size(100, 20);
-            this.txtStatus.TabIndex = 3;
             // 
             // dtpFec
             // 
@@ -152,7 +136,7 @@
             // cbCliente
             // 
             this.cbCliente.FormattingEnabled = true;
-            this.cbCliente.Location = new System.Drawing.Point(74, 74);
+            this.cbCliente.Location = new System.Drawing.Point(61, 52);
             this.cbCliente.Name = "cbCliente";
             this.cbCliente.Size = new System.Drawing.Size(142, 21);
             this.cbCliente.TabIndex = 10;
@@ -160,7 +144,7 @@
             // cbStatus
             // 
             this.cbStatus.FormattingEnabled = true;
-            this.cbStatus.Location = new System.Drawing.Point(222, 74);
+            this.cbStatus.Location = new System.Drawing.Point(221, 52);
             this.cbStatus.Name = "cbStatus";
             this.cbStatus.Size = new System.Drawing.Size(121, 21);
             this.cbStatus.TabIndex = 11;
@@ -178,9 +162,7 @@
             this.Controls.Add(this.btnFiltro);
             this.Controls.Add(this.dtpFec);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtStatus);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtCliente);
             this.Controls.Add(this.dgvReportes);
             this.Name = "FrmBorrar_Modificar";
             this.Text = "Borrar/Modificar";
@@ -194,10 +176,8 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvReportes;
-        private System.Windows.Forms.TextBox txtCliente;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtStatus;
         private System.Windows.Forms.DateTimePicker dtpFec;
         private System.Windows.Forms.Button btnFiltro;
         private System.Windows.Forms.Label label3;

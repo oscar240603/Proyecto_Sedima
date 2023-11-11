@@ -142,6 +142,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dtmFecha = new System.Windows.Forms.DateTimePicker();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.txtArranque = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -162,6 +166,7 @@
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.Size = new System.Drawing.Size(269, 20);
             this.txtCliente.TabIndex = 1;
+            this.txtCliente.TextChanged += new System.EventHandler(this.txtCliente_TextChanged);
             this.txtCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCliente_KeyPress);
             // 
             // label2
@@ -682,7 +687,7 @@
             // 
             // txtVAP
             // 
-            this.txtVAP.Location = new System.Drawing.Point(670, 427);
+            this.txtVAP.Location = new System.Drawing.Point(701, 428);
             this.txtVAP.Name = "txtVAP";
             this.txtVAP.Size = new System.Drawing.Size(51, 20);
             this.txtVAP.TabIndex = 59;
@@ -1209,6 +1214,44 @@
             this.dtmFecha.Size = new System.Drawing.Size(109, 20);
             this.dtmFecha.TabIndex = 123;
             // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.Location = new System.Drawing.Point(756, 433);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(49, 15);
+            this.label64.TabIndex = 244;
+            this.label64.Text = "Kg/cm2";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.Location = new System.Drawing.Point(727, 402);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(41, 15);
+            this.label62.TabIndex = 243;
+            this.label62.Text = "oz/m2";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.Location = new System.Drawing.Point(727, 373);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(49, 15);
+            this.label61.TabIndex = 242;
+            this.label61.Text = "Kg/cm2";
+            // 
+            // txtArranque
+            // 
+            this.txtArranque.Location = new System.Drawing.Point(642, 428);
+            this.txtArranque.Name = "txtArranque";
+            this.txtArranque.Size = new System.Drawing.Size(51, 20);
+            this.txtArranque.TabIndex = 245;
+            this.txtArranque.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtArranque_KeyPress);
+            // 
             // FrmReportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1218,6 +1261,10 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ClientSize = new System.Drawing.Size(851, 511);
+            this.Controls.Add(this.txtArranque);
+            this.Controls.Add(this.label64);
+            this.Controls.Add(this.label62);
+            this.Controls.Add(this.label61);
             this.Controls.Add(this.dtmFecha);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
@@ -1457,5 +1504,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DateTimePicker dtmFecha;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.TextBox txtArranque;
     }
 }

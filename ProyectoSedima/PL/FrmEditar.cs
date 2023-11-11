@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -57,6 +58,7 @@ namespace ProyectoSedima.PL
                             txtVG.Text = reporte.VG;
                             txtPDC.Text = reporte.PDC;
                             txtMC.Text = reporte.MC;
+                            txtVV.Text = reporte.VV;
                             txtVG.Text = reporte.VG;
                             txtBG.Text = reporte.BG;
                             txtPI.Text = reporte.PI;
@@ -69,7 +71,9 @@ namespace ProyectoSedima.PL
                             txtChimenea.Text = reporte.Chimenea;
                             txtAguaTanque.Text = reporte.Agua_tanque;
                             txtEC.Text = reporte.EC;
+                            txtSC.Text = reporte.SC;
                             txtVAP.Text = reporte.VAP;
+                            txtArranque.Text = reporte.ARR;
                             txtAA.Text = reporte.AA;
                             txtAC.Text = reporte.AC;
                             txtBAA.Text = reporte.BAA;
@@ -144,6 +148,7 @@ namespace ProyectoSedima.PL
                 txtEC.Text = lector["EC"].ToString();
                 txtSC.Text = lector["SC"].ToString();
                 txtVAP.Text = lector["VAP"].ToString();
+                txtArranque.Text = lector["ARR"].ToString();
                 txtAA.Text = lector["AA"].ToString();
                 txtAC.Text = lector["AC"].ToString();
                 txtBAA.Text = lector["BAA"].ToString();
@@ -174,14 +179,20 @@ namespace ProyectoSedima.PL
 
         private void button1_Click(object sender, EventArgs e)
         {
+            DateTime fechaSeleccionada = DateTime.Parse(txtFecha.Text);
+            string fechaFormateada = fechaSeleccionada.ToString("yyyy-MM-dd");
+
             conexion.Open();
-            string modificar = "UPDATE[dbo].[REPORTES]SET[Cliente] = '"+txtCliente.Text+"', [Caldera] = '"+txtCaldera.Text+"', [Modelo] = '"+txtModelo.Text+"', [Serie] = '"+txtSerie.Text+"', [Ciudad] = '"+txtCiudad.Text+"', [FecRegistro] = '"+txtFecha.Text+"',[FA] = '"+txtFA.Text+"', [FG] = '"+txtFG.Text+"', [PC] = '"+txtPC.Text+"', [ABN] = '"+txtABN.Text+"', [ANN] = '"+txtANN.Text+"', [VN] = '"+txtVN.Text+"', [FCN] = '"+txtFCN.Text+"', [PF] = '"+txtPF.Text+"', [PDC] = '"+txtPDC.Text+"', [MC] = '"+txtMC.Text+"', [VV] = '"+txtVV.Text+"', [VG] = '"+txtVG.Text+"', [BG] = '"+txtBG.Text+"', [PI] = '"+txtPI.Text+"', [EFP] = '"+txtEFP.Text+"', [FF] = '"+txtFF.Text+"', [BNA] = '"+txtBNA.Text+"', [CPV] = '"+txtCPV.Text+"', [LQ] = '"+txtLQ.Text+"', [CE] = '"+txtCE.Text+"', [Chimenea] = '"+txtChimenea.Text+"', [Agua_tanque] = '"+txtAguaTanque.Text+"', [EC] = '"+txtEC.Text+"',  [SC] = '"+txtSC.Text+"', [VAP] = '"+txtVAP.Text+"', [AA] = '"+txtAA.Text+"', [AC] = '"+txtAC.Text+"', [BAA] = '"+txtBAA.Text+"', [BAD] = '"+txtBAD.Text+"', [MV] = '"+txtMV.Text+"', [Min_Co2] = '"+txtMinCo2.Text+"', [Min_O2] = '"+txtMinO2.Text+"', [Min_Ppm] = '"+txtMinPpm.Text+"', [Min_Ex_Aire] = '"+txtMinEx.Text+"',[Med_Co2] = '"+txtMedCo2.Text+"', [Med_O2] = '"+txtMedO2.Text+"', [Med_Ppm] = '"+txtMedPpm.Text+"', [Med_Ex_Aire] = '"+txtMedEx.Text+"', [Max_Co2] = '"+txtMaxCo2.Text+"', [Max_O2] = '"+txtMaxO2.Text+"', [Max_Ppm] = '"+txtMaxPpm.Text+"', [Max_Ex_Aire] = '"+txtMaxEx.Text+"', [Comentarios] = '"+txtComentarios.Text+"'  WHERE[IDReporte] = '"+txtID.Text+ "'";
+            string modificar = "UPDATE[dbo].[REPORTES]SET[Cliente] = '"+txtCliente.Text+"', [Caldera] = '"+txtCaldera.Text+"', [Modelo] = '"+txtModelo.Text+"', [Serie] = '"+txtSerie.Text+"', [Ciudad] = '"+txtCiudad.Text+"', [FecRegistro] = '"+fechaFormateada+"',[FA] = '"+txtFA.Text+"', [FG] = '"+txtFG.Text+"', [PC] = '"+txtPC.Text+"', [ABN] = '"+txtABN.Text+"', [ANN] = '"+txtANN.Text+"', [VN] = '"+txtVN.Text+"', [FCN] = '"+txtFCN.Text+"', [PF] = '"+txtPF.Text+"', [PDC] = '"+txtPDC.Text+"', [MC] = '"+txtMC.Text+"', [VV] = '"+txtVV.Text+"', [VG] = '"+txtVG.Text+"', [BG] = '"+txtBG.Text+"', [PI] = '"+txtPI.Text+"', [EFP] = '"+txtEFP.Text+"', [FF] = '"+txtFF.Text+"', [BNA] = '"+txtBNA.Text+"', [CPV] = '"+txtCPV.Text+"', [LQ] = '"+txtLQ.Text+"', [CE] = '"+txtCE.Text+"', [Chimenea] = '"+txtChimenea.Text+"', [Agua_tanque] = '"+txtAguaTanque.Text+"', [EC] = '"+txtEC.Text+"',  [SC] = '"+txtSC.Text+"', [VAP] = '"+txtVAP.Text+ "', [ARR] = '"+txtArranque.Text+"', [AA] = '" + txtAA.Text+"', [AC] = '"+txtAC.Text+"', [BAA] = '"+txtBAA.Text+"', [BAD] = '"+txtBAD.Text+"', [MV] = '"+txtMV.Text+"', [Min_Co2] = '"+txtMinCo2.Text+"', [Min_O2] = '"+txtMinO2.Text+"', [Min_Ppm] = '"+txtMinPpm.Text+"', [Min_Ex_Aire] = '"+txtMinEx.Text+"',[Med_Co2] = '"+txtMedCo2.Text+"', [Med_O2] = '"+txtMedO2.Text+"', [Med_Ppm] = '"+txtMedPpm.Text+"', [Med_Ex_Aire] = '"+txtMedEx.Text+"', [Max_Co2] = '"+txtMaxCo2.Text+"', [Max_O2] = '"+txtMaxO2.Text+"', [Max_Ppm] = '"+txtMaxPpm.Text+"', [Max_Ex_Aire] = '"+txtMaxEx.Text+"', [Comentarios] = '"+txtComentarios.Text+"'  WHERE[IDReporte] = '"+txtID.Text+ "'";
 
             SqlCommand comando = new SqlCommand(modificar, conexion);
             comando.ExecuteNonQuery();
 
             MessageBox.Show("Se modificó correctamente");
             conexion.Close();
+
+            FrmBorrar_Modificar frmactualiza = new FrmBorrar_Modificar();
+            frmactualiza.Refresh();
         }
 
         private void txtID_KeyPress(object sender, KeyPressEventArgs e)
@@ -539,7 +550,7 @@ namespace ProyectoSedima.PL
                 return;
             }
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
-                txtVAP.Focus();
+                txtArranque.Focus();
         }
 
         private void txtVAP_KeyPress(object sender, KeyPressEventArgs e)
@@ -756,6 +767,18 @@ namespace ProyectoSedima.PL
             }
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
                 txtComentarios.Focus();
+        }
+
+        private void txtArranque_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+                txtVAP.Focus();
         }
     }
 }

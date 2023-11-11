@@ -65,5 +65,6 @@ namespace ProyectoSedima.Model
         public string Max_Ex_Aire { get; set; }
         public string Comentarios { get; set; }
         public string STATUS { get; set; }
+        public string ARR { get; set; }
     }
 }
