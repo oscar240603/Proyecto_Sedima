@@ -15,10 +15,6 @@ namespace ProyectoSedima.Model.ViewModel
         public string Serie { get; set; }
         public string Ciudad { get; set; }
         public DateTime FecRegistro { get; set; }
-        public string FA { get; set;}
-        public string FG { get; set; }
-        public string PC { get; set; }
-
         public string STATUS { get; set; }
     }
 }

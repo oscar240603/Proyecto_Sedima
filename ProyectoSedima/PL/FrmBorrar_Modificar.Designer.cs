@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.dgvReportes = new System.Windows.Forms.DataGridView();
+            this.Detalle = new System.Windows.Forms.DataGridViewImageColumn();
             this.txtCliente = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,9 +38,10 @@
             this.btnFiltro = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Detalle = new System.Windows.Forms.DataGridViewImageColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.dtpFinal = new System.Windows.Forms.DateTimePicker();
+            this.cbCliente = new System.Windows.Forms.ComboBox();
+            this.cbStatus = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReportes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,6 +57,13 @@
             this.dgvReportes.TabIndex = 0;
             this.dgvReportes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReportes_CellClick);
             this.dgvReportes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReportes_CellDoubleClick);
+            // 
+            // Detalle
+            // 
+            this.Detalle.HeaderText = "Detalle";
+            this.Detalle.Image = global::ProyectoSedima.Properties.Resources.detalle;
+            this.Detalle.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Detalle.Name = "Detalle";
             // 
             // txtCliente
             // 
@@ -98,9 +107,10 @@
             // 
             // btnFiltro
             // 
-            this.btnFiltro.Location = new System.Drawing.Point(629, 50);
+            this.btnFiltro.Font = new System.Drawing.Font("HP Simplified", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltro.Location = new System.Drawing.Point(629, 45);
             this.btnFiltro.Name = "btnFiltro";
-            this.btnFiltro.Size = new System.Drawing.Size(75, 23);
+            this.btnFiltro.Size = new System.Drawing.Size(87, 35);
             this.btnFiltro.TabIndex = 6;
             this.btnFiltro.Text = "Filtrar";
             this.btnFiltro.UseVisualStyleBackColor = true;
@@ -122,13 +132,6 @@
             this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             // 
-            // Detalle
-            // 
-            this.Detalle.HeaderText = "Detalle";
-            this.Detalle.Image = global::ProyectoSedima.Properties.Resources.detalle;
-            this.Detalle.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.Detalle.Name = "Detalle";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -146,11 +149,29 @@
             this.dtpFinal.Size = new System.Drawing.Size(102, 20);
             this.dtpFinal.TabIndex = 8;
             // 
+            // cbCliente
+            // 
+            this.cbCliente.FormattingEnabled = true;
+            this.cbCliente.Location = new System.Drawing.Point(74, 74);
+            this.cbCliente.Name = "cbCliente";
+            this.cbCliente.Size = new System.Drawing.Size(142, 21);
+            this.cbCliente.TabIndex = 10;
+            // 
+            // cbStatus
+            // 
+            this.cbStatus.FormattingEnabled = true;
+            this.cbStatus.Location = new System.Drawing.Point(222, 74);
+            this.cbStatus.Name = "cbStatus";
+            this.cbStatus.Size = new System.Drawing.Size(121, 21);
+            this.cbStatus.TabIndex = 11;
+            // 
             // FrmBorrar_Modificar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbStatus);
+            this.Controls.Add(this.cbCliente);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dtpFinal);
             this.Controls.Add(this.label3);
@@ -184,5 +205,7 @@
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dtpFinal;
+        private System.Windows.Forms.ComboBox cbCliente;
+        private System.Windows.Forms.ComboBox cbStatus;
     }
 }

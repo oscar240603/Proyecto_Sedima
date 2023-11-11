@@ -10,6 +10,7 @@ using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ProyectoSedima.PL
 {
@@ -20,6 +21,8 @@ namespace ProyectoSedima.PL
         public FrmBorrar_Modificar()
         {
             InitializeComponent();
+            carga_datos();
+            carga_status();
         }
 
         private void FrmBorrar_Modificar_Load(object sender, EventArgs e)
@@ -46,36 +49,35 @@ namespace ProyectoSedima.PL
                                Modelo = d.Modelo,
                                Serie = d.Serie,
                                Ciudad = d.Ciudad,
-                               FecRegistro = d.FecRegistro,
-                               FA = d.FA,
-                               FG = d.FG,
-                               PC = d.PC,
+                               FecRegistro = d.FecRegistro, 
                                STATUS = d.STATUS
                            }).AsQueryable();
 
-                if (!txtCliente.Text.Trim().Equals(""))
-                {
-                    lst = lst.Where(d => d.Cliente.Contains(txtCliente.Text.Trim()));
-                }
-                if (!txtStatus.Text.Trim().Equals(""))
-                {
-                    lst = lst.Where(d => d.STATUS.Contains(txtStatus.Text.Trim()));
-                }
+
+
+
                 if (dtpFec.Text != null && dtpFinal.Text != null)
                 {
                     DateTime fechaDesde = DateTime.Parse(dtpFec.Text);
                     DateTime fechaHasta = DateTime.Parse(dtpFinal.Text);
 
-                    // Realizar la consulta utilizando LINQ
                     lst = lst.Where(r => DbFunctions.TruncateTime(r.FecRegistro) >= fechaDesde.Date
                                     && DbFunctions.TruncateTime(r.FecRegistro) <= fechaHasta.Date);
-                        
+
                     /*DateTime fecha = DateTime.Parse(dtpFec.Text);
                     DateTime fecha2 = DateTime.Parse(dtpFinal.Text);
-                    lst = lst.Where(d => d.FecRegistro == fecha);*/
-                    
+                    filteredList = filteredList.Where(d => d.FecRegistro == fecha);*/
                 }
-
+                if (cbCliente.SelectedIndex > 0)
+                {
+                    lst = lst.Where(d => d.Cliente.Contains(cbCliente.Text.Trim()));
+                }
+                // Filtrar por Status si se seleccionó algo en el ComboBox
+                if (cbStatus.SelectedIndex > 0)
+                {
+                    lst = lst.Where(d => d.STATUS.Contains(cbStatus.Text.Trim()));
+                }
+                
 
 
                 dgvReportes.DataSource = lst.ToList();
@@ -86,11 +88,8 @@ namespace ProyectoSedima.PL
                 dgvReportes.Columns["Serie"].DisplayIndex = 4;
                 dgvReportes.Columns["Ciudad"].DisplayIndex = 5;
                 dgvReportes.Columns["FecRegistro"].DisplayIndex = 6;
-                dgvReportes.Columns["FA"].DisplayIndex = 7;
-                dgvReportes.Columns["FG"].DisplayIndex = 8;
-                dgvReportes.Columns["PC"].DisplayIndex = 9;
-                dgvReportes.Columns["STATUS"].DisplayIndex = 10;
-                dgvReportes.Columns["Detalle"].DisplayIndex= 11;
+                dgvReportes.Columns["STATUS"].DisplayIndex = 7;
+                dgvReportes.Columns["Detalle"].DisplayIndex= 8;
                 
 
             }
@@ -126,5 +125,44 @@ namespace ProyectoSedima.PL
                 Refresh();
             }
         }
+
+        public void carga_datos()
+        {
+            conexion.Open();
+            SqlCommand cmd = new SqlCommand("SELECT DISTINCT CLIENTE FROM REPORTES", conexion);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conexion.Close();
+
+            DataRow fila = dt.NewRow();
+            fila["CLIENTE"] = "Selecciona un cliente";
+            dt.Rows.InsertAt(fila,0);
+
+            cbCliente.ValueMember= "IdReporte";
+            cbCliente.DisplayMember= "CLIENTE";
+            cbCliente.DataSource= dt;
+
+        }
+
+        public void carga_status()
+        {
+            conexion.Open();
+            SqlCommand status = new SqlCommand("SELECT DISTINCT STATUS FROM REPORTES", conexion);
+            SqlDataAdapter da = new SqlDataAdapter(status);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conexion.Close();
+
+            DataRow fila = dt.NewRow();
+            fila["STATUS"] = "Selecciona un status";
+            dt.Rows.InsertAt(fila, 0);
+
+            cbStatus.ValueMember = "IdReporte";
+            cbStatus.DisplayMember = "STATUS";
+            cbStatus.DataSource = dt;
+
+        }
+
     }
 }

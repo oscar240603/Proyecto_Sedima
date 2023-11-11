@@ -503,6 +503,7 @@
             this.txtFecha.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtFecha.Location = new System.Drawing.Point(485, 174);
             this.txtFecha.Name = "txtFecha";
+            this.txtFecha.ReadOnly = true;
             this.txtFecha.Size = new System.Drawing.Size(109, 20);
             this.txtFecha.TabIndex = 127;
             this.txtFecha.Text = "YYYY/MM/DD";
@@ -1191,10 +1192,11 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(184, 1031);
+            this.btnModificar.Font = new System.Drawing.Font("HP Simplified", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Location = new System.Drawing.Point(184, 1019);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(75, 19);
+            this.btnModificar.Size = new System.Drawing.Size(95, 36);
             this.btnModificar.TabIndex = 236;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
