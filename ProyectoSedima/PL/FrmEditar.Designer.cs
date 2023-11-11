@@ -146,6 +146,8 @@
             this.label62 = new System.Windows.Forms.Label();
             this.txtArranque = new System.Windows.Forms.TextBox();
             this.label64 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -778,7 +780,7 @@
             // 
             // txtBAA
             // 
-            this.txtBAA.Location = new System.Drawing.Point(691, 592);
+            this.txtBAA.Location = new System.Drawing.Point(689, 592);
             this.txtBAA.Name = "txtBAA";
             this.txtBAA.Size = new System.Drawing.Size(51, 20);
             this.txtBAA.TabIndex = 196;
@@ -1244,6 +1246,26 @@
             this.label64.TabIndex = 241;
             this.label64.Text = "Kg/cm2";
             // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.Location = new System.Drawing.Point(746, 597);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(32, 15);
+            this.label63.TabIndex = 242;
+            this.label63.Text = "Amp";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.Location = new System.Drawing.Point(746, 648);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(32, 15);
+            this.label65.TabIndex = 243;
+            this.label65.Text = "Amp";
+            // 
             // FrmEditar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1251,6 +1273,8 @@
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(0, 50);
             this.ClientSize = new System.Drawing.Size(834, 511);
+            this.Controls.Add(this.label65);
+            this.Controls.Add(this.label63);
             this.Controls.Add(this.label64);
             this.Controls.Add(this.txtArranque);
             this.Controls.Add(this.label62);
@@ -1496,5 +1520,7 @@
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.TextBox txtArranque;
         private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label65;
     }
 }
