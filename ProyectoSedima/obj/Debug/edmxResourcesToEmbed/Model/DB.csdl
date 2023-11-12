@@ -53,9 +53,10 @@
     <Property Name="Max_O2" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="Max_Ppm" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="Max_Ex_Aire" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-    <Property Name="Comentarios" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Comentarios" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="STATUS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ARR" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="VOLTS" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityContainer Name="SEDIMAEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="REPORTES" EntityType="Self.REPORTES" />

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -77,6 +78,8 @@ namespace ProyectoSedima.PL
                             txtVAP.Text = reporte.VAP;
                             txtArranque.Text = reporte.ARR;
                             txtAA.Text = reporte.AA;
+                            string volts = reporte.VOLTS;
+                            SeleccionarRadioButton(volts);
                             txtAC.Text = reporte.AC;
                             txtBAA.Text = reporte.BAA;
                             txtBAD.Text = reporte.BAD;
@@ -119,6 +122,7 @@ namespace ProyectoSedima.PL
             lector = comando.ExecuteReader();
             if (lector.Read())
             {
+
                 txtCliente.Text = lector["CLIENTE"].ToString();
                 txtCaldera.Text = lector["CALDERA"].ToString();
                 txtFecha.Text = lector["FecRegistro"].ToString();
@@ -152,6 +156,8 @@ namespace ProyectoSedima.PL
                 txtVAP.Text = lector["VAP"].ToString();
                 txtArranque.Text = lector["ARR"].ToString();
                 txtAA.Text = lector["AA"].ToString();
+                string volts = lector["VOLTS"].ToString();
+                SeleccionarRadioButton(volts);
                 txtAC.Text = lector["AC"].ToString();
                 txtBAA.Text = lector["BAA"].ToString();
                 txtBAD.Text = lector["BAD"].ToString();
@@ -178,6 +184,24 @@ namespace ProyectoSedima.PL
             conexion.Close();
 
         }
+
+        private void SeleccionarRadioButton(string volts)
+        {
+            if (volts == "110")
+            {
+                rb110.Checked = true;
+            }
+            else if (volts == "220")
+            {
+                rb220.Checked = true;
+            }
+            else if (volts == "440")
+            {
+                rb440.Checked = true;
+            }
+        }
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {

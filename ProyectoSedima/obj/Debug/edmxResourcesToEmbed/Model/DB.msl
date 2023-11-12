@@ -4,6 +4,7 @@
     <EntitySetMapping Name="REPORTES">
       <EntityTypeMapping TypeName="SEDIMAModel.REPORTES">
         <MappingFragment StoreEntitySet="REPORTES">
+          <ScalarProperty Name="VOLTS" ColumnName="VOLTS" />
           <ScalarProperty Name="ARR" ColumnName="ARR" />
           <ScalarProperty Name="IdReporte" ColumnName="IdReporte" />
           <ScalarProperty Name="Cliente" ColumnName="Cliente" />

@@ -86,3 +86,4 @@ C:\Users\Oscar\source\repos\Proyecto_Sedima\ProyectoSedima\bin\Debug\EntityFrame
 C:\Users\Oscar\source\repos\Proyecto_Sedima\ProyectoSedima\bin\Debug\EntityFramework.xml
 C:\Users\Oscar\source\repos\Proyecto_Sedima\ProyectoSedima\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Oscar\source\repos\Proyecto_Sedima\ProyectoSedima\obj\Debug\ProyectoSedima.csproj.CopyComplete
+C:\Users\Oscar\Source\Repos\Proyecto_Sedima\ProyectoSedima\bin\Debug\MaterialSkin.dll

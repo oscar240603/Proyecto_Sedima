@@ -148,17 +148,20 @@
             this.label63 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.rb110 = new System.Windows.Forms.RadioButton();
+            this.rb220 = new System.Windows.Forms.RadioButton();
+            this.rb440 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(621, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(573, 1);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(164, 147);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(212, 168);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 163;
             this.pictureBox1.TabStop = false;
             // 
@@ -168,7 +171,7 @@
             this.label59.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.label59.Font = new System.Drawing.Font("Algerian", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label59.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label59.Location = new System.Drawing.Point(28, 86);
+            this.label59.Location = new System.Drawing.Point(32, 99);
             this.label59.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(516, 30);
@@ -191,7 +194,7 @@
             this.label57.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.label57.Font = new System.Drawing.Font("Algerian", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label57.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label57.Location = new System.Drawing.Point(28, 41);
+            this.label57.Location = new System.Drawing.Point(32, 54);
             this.label57.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(526, 30);
@@ -809,12 +812,11 @@
             // 
             // label38
             // 
-            this.label38.AutoSize = true;
             this.label38.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(435, 565);
+            this.label38.Location = new System.Drawing.Point(435, 564);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(355, 16);
+            this.label38.Size = new System.Drawing.Size(355, 20);
             this.label38.TabIndex = 192;
             this.label38.Text = "Amperaje en motores:                                                 ";
             // 
@@ -1262,12 +1264,48 @@
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Cursor = System.Windows.Forms.Cursors.No;
-            this.textBox2.Location = new System.Drawing.Point(33, 73);
+            this.textBox2.Location = new System.Drawing.Point(37, 86);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(511, 10);
             this.textBox2.TabIndex = 247;
+            // 
+            // rb110
+            // 
+            this.rb110.AutoSize = true;
+            this.rb110.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.rb110.Location = new System.Drawing.Point(603, 567);
+            this.rb110.Name = "rb110";
+            this.rb110.Size = new System.Drawing.Size(49, 17);
+            this.rb110.TabIndex = 248;
+            this.rb110.TabStop = true;
+            this.rb110.Text = "110v";
+            this.rb110.UseVisualStyleBackColor = false;
+            // 
+            // rb220
+            // 
+            this.rb220.AutoSize = true;
+            this.rb220.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.rb220.Location = new System.Drawing.Point(665, 567);
+            this.rb220.Name = "rb220";
+            this.rb220.Size = new System.Drawing.Size(49, 17);
+            this.rb220.TabIndex = 249;
+            this.rb220.TabStop = true;
+            this.rb220.Text = "220v";
+            this.rb220.UseVisualStyleBackColor = false;
+            // 
+            // rb440
+            // 
+            this.rb440.AutoSize = true;
+            this.rb440.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.rb440.Location = new System.Drawing.Point(720, 567);
+            this.rb440.Name = "rb440";
+            this.rb440.Size = new System.Drawing.Size(49, 17);
+            this.rb440.TabIndex = 250;
+            this.rb440.TabStop = true;
+            this.rb440.Text = "440v";
+            this.rb440.UseVisualStyleBackColor = false;
             // 
             // FrmEditar
             // 
@@ -1276,6 +1314,9 @@
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(0, 50);
             this.ClientSize = new System.Drawing.Size(834, 511);
+            this.Controls.Add(this.rb440);
+            this.Controls.Add(this.rb220);
+            this.Controls.Add(this.rb110);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label65);
             this.Controls.Add(this.label63);
@@ -1524,5 +1565,8 @@
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.RadioButton rb110;
+        private System.Windows.Forms.RadioButton rb220;
+        private System.Windows.Forms.RadioButton rb440;
     }
 }

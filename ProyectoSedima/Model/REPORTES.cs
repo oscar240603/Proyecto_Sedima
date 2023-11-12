@@ -66,5 +66,6 @@ namespace ProyectoSedima.Model
         public string Comentarios { get; set; }
         public string STATUS { get; set; }
         public string ARR { get; set; }
+        public string VOLTS { get; set; }
     }
 }

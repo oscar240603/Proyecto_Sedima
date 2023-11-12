@@ -48,6 +48,7 @@
     <Property Name="ARR" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="AA" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="AC" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="VOLTS" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="BAA" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="BAD" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="MV" Type="varchar" MaxLength="20" Nullable="false" />
@@ -63,7 +64,7 @@
     <Property Name="Max_O2" Type="varchar" MaxLength="10" />
     <Property Name="Max_Ppm" Type="varchar" MaxLength="10" />
     <Property Name="Max_Ex_Aire" Type="varchar" MaxLength="10" />
-    <Property Name="Comentarios" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Comentarios" Type="nvarchar(max)" />
     <Property Name="STATUS" Type="varchar" MaxLength="20" Nullable="false" />
   </EntityType>
   <EntityContainer Name="SEDIMAModelStoreContainer">
