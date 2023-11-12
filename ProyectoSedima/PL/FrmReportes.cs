@@ -779,5 +779,35 @@ namespace ProyectoSedima.PL
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
                 txtVAP.Focus();
         }
+
+        private void btnInsertar_MouseEnter(object sender, EventArgs e)
+        {
+            btnInsertar.BackColor = Color.LightBlue;
+        }
+
+        private void btnInsertar_MouseLeave(object sender, EventArgs e)
+        {
+            btnInsertar.BackColor = Color.White;
+        }
+
+        private void Cancelar_MouseEnter(object sender, EventArgs e)
+        {
+            Cancelar.BackColor = Color.LightBlue;
+        }
+
+        private void Cancelar_MouseLeave(object sender, EventArgs e)
+        {
+            Cancelar.BackColor = Color.White;
+        }
+
+        private void btnBorrarModificar_MouseEnter(object sender, EventArgs e)
+        {
+            btnBorrarModificar.BackColor = Color.LightBlue;
+        }
+
+        private void btnBorrarModificar_MouseLeave(object sender, EventArgs e)
+        {
+            btnBorrarModificar.BackColor = Color.White;
+        }
     }
 }

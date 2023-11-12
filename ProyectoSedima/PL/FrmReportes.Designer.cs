@@ -1108,6 +1108,8 @@
             // 
             // btnInsertar
             // 
+            this.btnInsertar.BackColor = System.Drawing.SystemColors.Info;
+            this.btnInsertar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnInsertar.Font = new System.Drawing.Font("HP Simplified", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsertar.ForeColor = System.Drawing.Color.Black;
             this.btnInsertar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1116,30 +1118,40 @@
             this.btnInsertar.Size = new System.Drawing.Size(101, 33);
             this.btnInsertar.TabIndex = 112;
             this.btnInsertar.Text = "Agregar";
-            this.btnInsertar.UseVisualStyleBackColor = true;
+            this.btnInsertar.UseVisualStyleBackColor = false;
             this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
+            this.btnInsertar.MouseEnter += new System.EventHandler(this.btnInsertar_MouseEnter);
+            this.btnInsertar.MouseLeave += new System.EventHandler(this.btnInsertar_MouseLeave);
             // 
             // Cancelar
             // 
+            this.Cancelar.BackColor = System.Drawing.SystemColors.Info;
+            this.Cancelar.FlatAppearance.BorderSize = 0;
             this.Cancelar.Font = new System.Drawing.Font("HP Simplified", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cancelar.Location = new System.Drawing.Point(360, 1007);
             this.Cancelar.Name = "Cancelar";
             this.Cancelar.Size = new System.Drawing.Size(86, 33);
             this.Cancelar.TabIndex = 114;
             this.Cancelar.Text = "Limpiar";
-            this.Cancelar.UseVisualStyleBackColor = true;
+            this.Cancelar.UseVisualStyleBackColor = false;
             this.Cancelar.Click += new System.EventHandler(this.Cancelar_Click);
+            this.Cancelar.MouseEnter += new System.EventHandler(this.Cancelar_MouseEnter);
+            this.Cancelar.MouseLeave += new System.EventHandler(this.Cancelar_MouseLeave);
             // 
             // btnBorrarModificar
             // 
+            this.btnBorrarModificar.BackColor = System.Drawing.SystemColors.Info;
+            this.btnBorrarModificar.FlatAppearance.BorderSize = 0;
             this.btnBorrarModificar.Font = new System.Drawing.Font("HP Simplified", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBorrarModificar.Location = new System.Drawing.Point(494, 1007);
             this.btnBorrarModificar.Name = "btnBorrarModificar";
             this.btnBorrarModificar.Size = new System.Drawing.Size(115, 33);
             this.btnBorrarModificar.TabIndex = 116;
             this.btnBorrarModificar.Text = "Buscar";
-            this.btnBorrarModificar.UseVisualStyleBackColor = true;
+            this.btnBorrarModificar.UseVisualStyleBackColor = false;
             this.btnBorrarModificar.Click += new System.EventHandler(this.btnBorrarModificar_Click);
+            this.btnBorrarModificar.MouseEnter += new System.EventHandler(this.btnBorrarModificar_MouseEnter);
+            this.btnBorrarModificar.MouseLeave += new System.EventHandler(this.btnBorrarModificar_MouseLeave);
             // 
             // label57
             // 
@@ -1181,10 +1193,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(627, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(606, 11);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(164, 147);
+            this.pictureBox1.Size = new System.Drawing.Size(185, 159);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 121;
             this.pictureBox1.TabStop = false;
@@ -1422,6 +1434,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCliente);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(98, 97);
             this.Name = "FrmReportes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

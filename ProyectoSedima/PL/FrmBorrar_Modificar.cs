@@ -91,7 +91,9 @@ namespace ProyectoSedima.PL
                 dgvReportes.Columns["FecRegistro"].DisplayIndex = 6;
                 dgvReportes.Columns["STATUS"].DisplayIndex = 7;
                 dgvReportes.Columns["Detalle"].DisplayIndex= 8;
+                dgvReportes.Columns["Detalle"].Width = 50;
                 
+
 
             }
                 
@@ -165,5 +167,14 @@ namespace ProyectoSedima.PL
 
         }
 
+        private void btnFiltro_MouseEnter(object sender, EventArgs e)
+        {
+            btnFiltro.BackColor = Color.LightBlue;
+        }
+
+        private void btnFiltro_MouseLeave(object sender, EventArgs e)
+        {
+            btnFiltro.BackColor = Color.White;
+        }
     }
 }
