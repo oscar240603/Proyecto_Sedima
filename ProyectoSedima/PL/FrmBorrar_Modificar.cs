@@ -16,7 +16,7 @@ namespace ProyectoSedima.PL
 {
     public partial class FrmBorrar_Modificar : Form
     {
-        static string conexionstring = "Data Source=LAPTOP-OSCAR202\\SQLEXPRESS;Initial Catalog=SEDIMA;Integrated Security=True";
+        static string conexionstring = "Data Source=LAPTOP-OSCAR202\\SQLEXPRESS;Initial Catalog=SEDIMA_NEW;Integrated Security=True";
         SqlConnection conexion = new SqlConnection(conexionstring);
         public FrmBorrar_Modificar()
         {
@@ -39,10 +39,10 @@ namespace ProyectoSedima.PL
 
         private void Refresh()
         {
-            using (Model.SEDIMAEntities db = new Model.SEDIMAEntities())
+            using (Model.SEDIMA_NEWEntities1 db = new Model.SEDIMA_NEWEntities1())
             {
-                var lst = (from d in db.REPORTES
-                           select new Model.ViewModel.ReporteViewModel
+                var lst = (from d in db.REPORTE
+                           select new Model.ViewModel.Reporte
                            {
                                IdReporte = d.IdReporte,
                                Cliente = d.Cliente,
@@ -65,9 +65,6 @@ namespace ProyectoSedima.PL
                     lst = lst.Where(r => DbFunctions.TruncateTime(r.FecRegistro) >= fechaDesde.Date
                                     && DbFunctions.TruncateTime(r.FecRegistro) <= fechaHasta.Date);
 
-                    /*DateTime fecha = DateTime.Parse(dtpFec.Text);
-                    DateTime fecha2 = DateTime.Parse(dtpFinal.Text);
-                    filteredList = filteredList.Where(d => d.FecRegistro == fecha);*/
                 }
                 if (cbCliente.SelectedIndex > 0)
                 {
@@ -76,7 +73,7 @@ namespace ProyectoSedima.PL
                 // Filtrar por Status si se seleccionó algo en el ComboBox
                 if (cbStatus.SelectedIndex > 0)
                 {
-                    lst = lst.Where(d => d.STATUS.Contains(cbStatus.Text.Trim()));
+                    lst = lst.Where(d => d.Caldera.Contains(cbStatus.Text.Trim()));
                 }
                 
 
@@ -128,13 +125,14 @@ namespace ProyectoSedima.PL
                 Refresh();
             }
         }
-
+        
         public void carga_datos()
         {
+            
             conexion.Open();
-            SqlCommand cmd = new SqlCommand("SELECT DISTINCT CLIENTE FROM REPORTES", conexion);
+            SqlCommand cmd = new SqlCommand("SELECT DISTINCT CLIENTE FROM REPORTE", conexion);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
+            DataTable dt = new DataTable(); 
             da.Fill(dt);
             conexion.Close();
 
@@ -148,21 +146,22 @@ namespace ProyectoSedima.PL
 
         }
 
+
         public void carga_status()
         {
             conexion.Open();
-            SqlCommand status = new SqlCommand("SELECT DISTINCT STATUS FROM REPORTES", conexion);
+            SqlCommand status = new SqlCommand("SELECT DISTINCT CALDERA FROM REPORTE", conexion);
             SqlDataAdapter da = new SqlDataAdapter(status);
             DataTable dt = new DataTable();
             da.Fill(dt);
             conexion.Close();
 
             DataRow fila = dt.NewRow();
-            fila["STATUS"] = "Selecciona un status";
+            fila["CALDERA"] = "Selecciona un modelo de caldera";
             dt.Rows.InsertAt(fila, 0);
 
             cbStatus.ValueMember = "IdReporte";
-            cbStatus.DisplayMember = "STATUS";
+            cbStatus.DisplayMember = "CALDERA";
             cbStatus.DataSource = dt;
 
         }

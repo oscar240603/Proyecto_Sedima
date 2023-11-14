@@ -147,21 +147,22 @@
             this.label64 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.rb110 = new System.Windows.Forms.RadioButton();
             this.rb220 = new System.Windows.Forms.RadioButton();
             this.rb440 = new System.Windows.Forms.RadioButton();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(573, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(591, 11);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(214, 168);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.Size = new System.Drawing.Size(193, 158);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 163;
             this.pictureBox1.TabStop = false;
             // 
@@ -204,11 +205,11 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.label35.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.Location = new System.Drawing.Point(435, 472);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(352, 16);
+            this.label35.Size = new System.Drawing.Size(352, 20);
             this.label35.TabIndex = 159;
             this.label35.Text = "Inspeccion visual en bombas:                                   ";
             // 
@@ -223,10 +224,11 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label34.Location = new System.Drawing.Point(435, 440);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(179, 15);
+            this.label34.Size = new System.Drawing.Size(184, 14);
             this.label34.TabIndex = 157;
             this.label34.Text = "De vapor, arranque/paro (VAP): ";
             // 
@@ -241,10 +243,11 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label33.Location = new System.Drawing.Point(435, 410);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(159, 15);
+            this.label33.Size = new System.Drawing.Size(160, 14);
             this.label33.TabIndex = 155;
             this.label33.Text = "Salida de combustible (SC):";
             // 
@@ -259,21 +262,22 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label32.Location = new System.Drawing.Point(435, 381);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(167, 15);
+            this.label32.Size = new System.Drawing.Size(170, 14);
             this.label32.TabIndex = 153;
             this.label32.Text = "Entrada de combustible (EC):";
             // 
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.label31.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.Location = new System.Drawing.Point(433, 352);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(353, 16);
+            this.label31.Size = new System.Drawing.Size(352, 20);
             this.label31.TabIndex = 148;
             this.label31.Text = "Presiones:                                                                    ";
             // 
@@ -288,12 +292,13 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label30.Location = new System.Drawing.Point(435, 319);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(207, 15);
+            this.label30.Size = new System.Drawing.Size(220, 14);
             this.label30.TabIndex = 151;
-            this.label30.Text = "Agua tanque. Cond (Ideal 80 a 95 °c)";
+            this.label30.Text = "Agua tanque. Cond (Ideal 80 a 95 °c):";
             // 
             // txtChimenea
             // 
@@ -306,21 +311,22 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label29.Location = new System.Drawing.Point(433, 287);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(187, 15);
+            this.label29.Size = new System.Drawing.Size(193, 14);
             this.label29.TabIndex = 149;
             this.label29.Text = "Chimenea (Rango 150 a 250 °c):";
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.label28.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.Location = new System.Drawing.Point(433, 255);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(352, 16);
+            this.label28.Size = new System.Drawing.Size(355, 20);
             this.label28.TabIndex = 147;
             this.label28.Text = "Temperaturas:                                                             ";
             // 
@@ -335,10 +341,11 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label13.Location = new System.Drawing.Point(34, 468);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(168, 15);
+            this.label13.Size = new System.Drawing.Size(170, 14);
             this.label13.TabIndex = 145;
             this.label13.Text = "Apaga en nivel normal (ANN):";
             // 
@@ -353,21 +360,22 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label12.Location = new System.Drawing.Point(30, 426);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(171, 15);
+            this.label12.Size = new System.Drawing.Size(175, 14);
             this.label12.TabIndex = 143;
             this.label12.Text = "Arranque por bajo nivel (ABN):";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.label11.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(30, 393);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(399, 16);
+            this.label11.Size = new System.Drawing.Size(401, 20);
             this.label11.TabIndex = 142;
             this.label11.Text = "Verificacion de arranque y paro de bomba:                        ";
             // 
@@ -382,10 +390,11 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label10.Location = new System.Drawing.Point(30, 355);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(121, 15);
+            this.label10.Size = new System.Drawing.Size(120, 14);
             this.label10.TabIndex = 140;
             this.label10.Text = "Purga columna (PC):";
             // 
@@ -400,10 +409,11 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label9.Location = new System.Drawing.Point(30, 319);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(104, 15);
+            this.label9.Size = new System.Drawing.Size(107, 14);
             this.label9.TabIndex = 138;
             this.label9.Text = "Filtro de gas (FG):";
             // 
@@ -418,21 +428,22 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label8.Location = new System.Drawing.Point(30, 287);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(110, 15);
+            this.label8.Size = new System.Drawing.Size(114, 14);
             this.label8.TabIndex = 136;
             this.label8.Text = "Filtro de agua (FA):";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.label7.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(30, 255);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(397, 16);
+            this.label7.Size = new System.Drawing.Size(399, 20);
             this.label7.TabIndex = 135;
             this.label7.Text = "Revision mensual (check list):                                              ";
             // 
@@ -536,6 +547,7 @@
             // 
             this.txtCliente.Location = new System.Drawing.Point(126, 177);
             this.txtCliente.Name = "txtCliente";
+            this.txtCliente.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtCliente.Size = new System.Drawing.Size(269, 20);
             this.txtCliente.TabIndex = 124;
             this.txtCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCliente_KeyPress);
@@ -679,30 +691,30 @@
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label50.Location = new System.Drawing.Point(454, 734);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(52, 15);
+            this.label50.Size = new System.Drawing.Size(51, 14);
             this.label50.TabIndex = 206;
             this.label50.Text = "Minimo:";
             // 
             // label49
             // 
             this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label49.Location = new System.Drawing.Point(454, 763);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(45, 15);
+            this.label49.Size = new System.Drawing.Size(44, 14);
             this.label49.TabIndex = 205;
             this.label49.Text = "Medio:";
             // 
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label48.Location = new System.Drawing.Point(454, 794);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(55, 15);
+            this.label48.Size = new System.Drawing.Size(54, 14);
             this.label48.TabIndex = 204;
             this.label48.Text = "Maximo:";
             // 
@@ -719,17 +731,17 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.label21.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(435, 679);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(357, 16);
+            this.label21.Size = new System.Drawing.Size(358, 20);
             this.label21.TabIndex = 202;
             this.label21.Text = "Parametros de gases de combustion:                       ";
             // 
             // txtFF
             // 
-            this.txtFF.Location = new System.Drawing.Point(218, 817);
+            this.txtFF.Location = new System.Drawing.Point(219, 817);
             this.txtFF.Name = "txtFF";
             this.txtFF.Size = new System.Drawing.Size(51, 20);
             this.txtFF.TabIndex = 201;
@@ -738,21 +750,21 @@
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(31, 818);
+            this.label44.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(29, 818);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(113, 15);
+            this.label44.Size = new System.Drawing.Size(118, 14);
             this.label44.TabIndex = 200;
             this.label44.Text = "Falla de flama (FF):";
             // 
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.label43.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label43.Location = new System.Drawing.Point(30, 786);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(389, 16);
+            this.label43.Size = new System.Drawing.Size(387, 20);
             this.label43.TabIndex = 199;
             this.label43.Text = "Pruebas de seguridad:                                                        ";
             // 
@@ -766,7 +778,7 @@
             // 
             // txtBAD
             // 
-            this.txtBAD.Location = new System.Drawing.Point(689, 615);
+            this.txtBAD.Location = new System.Drawing.Point(689, 619);
             this.txtBAD.Name = "txtBAD";
             this.txtBAD.Size = new System.Drawing.Size(51, 20);
             this.txtBAD.TabIndex = 197;
@@ -783,37 +795,40 @@
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label41.Location = new System.Drawing.Point(436, 650);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(163, 15);
+            this.label41.Size = new System.Drawing.Size(169, 14);
             this.label41.TabIndex = 195;
             this.label41.Text = "De motor de ventilador (MV):";
             // 
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(436, 620);
+            this.label40.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.label40.Location = new System.Drawing.Point(436, 625);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(247, 15);
+            this.label40.Size = new System.Drawing.Size(249, 14);
             this.label40.TabIndex = 194;
             this.label40.Text = "De bomba de alimentacion de diesel (BAD):";
             // 
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(436, 593);
+            this.label39.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.label39.Location = new System.Drawing.Point(436, 598);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(240, 15);
+            this.label39.Size = new System.Drawing.Size(242, 14);
             this.label39.TabIndex = 193;
             this.label39.Text = "De bomba de alimentacion de agua (BAA):";
             // 
             // label38
             // 
-            this.label38.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.label38.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.Location = new System.Drawing.Point(435, 564);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(355, 20);
@@ -831,10 +846,11 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label37.Location = new System.Drawing.Point(436, 528);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(213, 15);
+            this.label37.Size = new System.Drawing.Size(217, 14);
             this.label37.TabIndex = 190;
             this.label37.Text = "De alimentacion de combustible (AC):";
             // 
@@ -849,10 +865,11 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label36.Location = new System.Drawing.Point(436, 502);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(173, 15);
+            this.label36.Size = new System.Drawing.Size(175, 14);
             this.label36.TabIndex = 188;
             this.label36.Text = "De alimentacion de agua (AA):";
             // 
@@ -877,10 +894,10 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.Location = new System.Drawing.Point(250, 723);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(103, 30);
+            this.label26.Size = new System.Drawing.Size(105, 28);
             this.label26.TabIndex = 185;
             this.label26.Text = "Encendido flama \r\nprincipal (EFP):";
             // 
@@ -903,31 +920,31 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(30, 752);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(138, 15);
+            this.label25.Size = new System.Drawing.Size(143, 14);
             this.label25.TabIndex = 182;
             this.label25.Text = "Periodo de Ignición (PI):";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(30, 721);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(131, 15);
+            this.label24.Size = new System.Drawing.Size(132, 14);
             this.label24.TabIndex = 181;
             this.label24.Text = "Barrido de gases (BG):";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.label23.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(29, 691);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(390, 16);
+            this.label23.Size = new System.Drawing.Size(392, 20);
             this.label23.TabIndex = 180;
             this.label23.Text = "Programador ciclo de trabajo:                                            ";
             // 
@@ -950,26 +967,28 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label22.Location = new System.Drawing.Point(244, 648);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(116, 15);
+            this.label22.Size = new System.Drawing.Size(118, 14);
             this.label22.TabIndex = 177;
             this.label22.Text = "Valvula de gas (VG):";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(242, 601);
+            this.label20.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.label20.Location = new System.Drawing.Point(244, 601);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(124, 15);
+            this.label20.Size = new System.Drawing.Size(129, 14);
             this.label20.TabIndex = 176;
             this.label20.Text = "Valvula de vapor (VV):";
             // 
             // txtMC
             // 
-            this.txtMC.Location = new System.Drawing.Point(366, 543);
+            this.txtMC.Location = new System.Drawing.Point(368, 553);
             this.txtMC.Name = "txtMC";
             this.txtMC.Size = new System.Drawing.Size(51, 20);
             this.txtMC.TabIndex = 175;
@@ -978,10 +997,11 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label19.Location = new System.Drawing.Point(246, 543);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(107, 30);
+            this.label19.Size = new System.Drawing.Size(109, 28);
             this.label19.TabIndex = 174;
             this.label19.Text = "Manifold \r\nde controles (MC):";
             // 
@@ -996,10 +1016,11 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label18.Location = new System.Drawing.Point(30, 648);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(147, 15);
+            this.label18.Size = new System.Drawing.Size(145, 14);
             this.label18.TabIndex = 172;
             this.label18.Text = "Purga de columna (PDC):";
             // 
@@ -1014,10 +1035,11 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(34, 613);
+            this.label17.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.label17.Location = new System.Drawing.Point(29, 615);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(126, 15);
+            this.label17.Size = new System.Drawing.Size(127, 14);
             this.label17.TabIndex = 170;
             this.label17.Text = "Purgas de fondo (PF):";
             // 
@@ -1032,10 +1054,11 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label16.Location = new System.Drawing.Point(30, 573);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(122, 30);
+            this.label16.Size = new System.Drawing.Size(126, 28);
             this.label16.TabIndex = 168;
             this.label16.Text = "Fugas en\r\ncristal de nivel (FCN):";
             // 
@@ -1050,27 +1073,28 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label15.Location = new System.Drawing.Point(30, 543);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(127, 15);
+            this.label15.Size = new System.Drawing.Size(131, 14);
             this.label15.TabIndex = 166;
             this.label15.Text = "Valvulas de nivel (VN):";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.label14.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(30, 513);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(392, 16);
+            this.label14.Size = new System.Drawing.Size(394, 20);
             this.label14.TabIndex = 165;
             this.label14.Text = "Accionamiento y revision de valvulas:                               ";
             // 
             // txtLQ
             // 
-            this.txtLQ.Location = new System.Drawing.Point(208, 944);
+            this.txtLQ.Location = new System.Drawing.Point(219, 943);
             this.txtLQ.Name = "txtLQ";
             this.txtLQ.Size = new System.Drawing.Size(51, 20);
             this.txtLQ.TabIndex = 232;
@@ -1078,7 +1102,7 @@
             // 
             // txtCE
             // 
-            this.txtCE.Location = new System.Drawing.Point(208, 970);
+            this.txtCE.Location = new System.Drawing.Point(219, 971);
             this.txtCE.Name = "txtCE";
             this.txtCE.Size = new System.Drawing.Size(51, 20);
             this.txtCE.TabIndex = 231;
@@ -1087,31 +1111,31 @@
             // label56
             // 
             this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label56.Location = new System.Drawing.Point(31, 945);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(165, 15);
+            this.label56.Size = new System.Drawing.Size(163, 14);
             this.label56.TabIndex = 230;
             this.label56.Text = "Limpieza de quemador (LQ):";
             // 
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label55.Location = new System.Drawing.Point(31, 973);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(169, 15);
+            this.label55.Size = new System.Drawing.Size(179, 14);
             this.label55.TabIndex = 229;
-            this.label55.Text = "Clibracion de electrodos (CE):";
+            this.label55.Text = "Calibracion de electrodos (CE):";
             // 
             // label54
             // 
             this.label54.AutoSize = true;
-            this.label54.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.label54.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label54.Location = new System.Drawing.Point(31, 918);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(387, 16);
+            this.label54.Size = new System.Drawing.Size(391, 20);
             this.label54.TabIndex = 228;
             this.label54.Text = "Quemador:                                                                        " +
     "    ";
@@ -1135,26 +1159,26 @@
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(31, 880);
+            this.label46.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(29, 882);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(185, 15);
+            this.label46.Size = new System.Drawing.Size(189, 14);
             this.label46.TabIndex = 225;
             this.label46.Text = "Corte por presion de vapor(CPV):";
             // 
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(30, 851);
+            this.label45.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(29, 851);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(146, 15);
+            this.label45.Size = new System.Drawing.Size(147, 14);
             this.label45.TabIndex = 224;
             this.label45.Text = "Bajo nivel de agua (BNA):";
             // 
             // txtComentarios
             // 
-            this.txtComentarios.Location = new System.Drawing.Point(454, 876);
+            this.txtComentarios.Location = new System.Drawing.Point(438, 875);
             this.txtComentarios.Multiline = true;
             this.txtComentarios.Name = "txtComentarios";
             this.txtComentarios.Size = new System.Drawing.Size(354, 113);
@@ -1163,10 +1187,10 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(466, 846);
+            this.label42.Font = new System.Drawing.Font("HP Simplified Hans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(436, 846);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(146, 15);
+            this.label42.Size = new System.Drawing.Size(149, 14);
             this.label42.TabIndex = 222;
             this.label42.Text = "Comentarios adicionales:";
             // 
@@ -1192,7 +1216,7 @@
             // btnModificar
             // 
             this.btnModificar.Font = new System.Drawing.Font("HP Simplified", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(184, 1019);
+            this.btnModificar.Location = new System.Drawing.Point(348, 1026);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(95, 36);
@@ -1261,22 +1285,10 @@
             this.label65.TabIndex = 243;
             this.label65.Text = "Amp";
             // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.No;
-            this.textBox2.Location = new System.Drawing.Point(37, 86);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(511, 10);
-            this.textBox2.TabIndex = 247;
-            // 
             // rb110
             // 
             this.rb110.AutoSize = true;
-            this.rb110.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.rb110.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.rb110.Location = new System.Drawing.Point(603, 567);
             this.rb110.Name = "rb110";
             this.rb110.Size = new System.Drawing.Size(49, 17);
@@ -1288,7 +1300,7 @@
             // rb220
             // 
             this.rb220.AutoSize = true;
-            this.rb220.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.rb220.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.rb220.Location = new System.Drawing.Point(665, 567);
             this.rb220.Name = "rb220";
             this.rb220.Size = new System.Drawing.Size(49, 17);
@@ -1300,7 +1312,7 @@
             // rb440
             // 
             this.rb440.AutoSize = true;
-            this.rb440.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.rb440.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.rb440.Location = new System.Drawing.Point(720, 567);
             this.rb440.Name = "rb440";
             this.rb440.Size = new System.Drawing.Size(49, 17);
@@ -1309,17 +1321,41 @@
             this.rb440.Text = "440v";
             this.rb440.UseVisualStyleBackColor = false;
             // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.Location = new System.Drawing.Point(746, 624);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(32, 15);
+            this.label66.TabIndex = 252;
+            this.label66.Text = "Amp";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.BackColor = System.Drawing.Color.Tomato;
+            this.label67.Location = new System.Drawing.Point(35, 84);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(505, 13);
+            this.label67.TabIndex = 253;
+            this.label67.Text = "                                                                                 " +
+    "                                                                                " +
+    "     ";
+            // 
             // FrmEditar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(0, 50);
-            this.ClientSize = new System.Drawing.Size(834, 511);
+            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.ClientSize = new System.Drawing.Size(814, 511);
+            this.Controls.Add(this.label67);
+            this.Controls.Add(this.label66);
             this.Controls.Add(this.rb440);
             this.Controls.Add(this.rb220);
             this.Controls.Add(this.rb110);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label65);
             this.Controls.Add(this.label63);
             this.Controls.Add(this.label64);
@@ -1568,9 +1604,10 @@
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.RadioButton rb110;
         private System.Windows.Forms.RadioButton rb220;
         private System.Windows.Forms.RadioButton rb440;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label67;
     }
 }

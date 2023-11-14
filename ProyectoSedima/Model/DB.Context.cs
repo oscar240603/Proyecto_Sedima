@@ -13,10 +13,10 @@ namespace ProyectoSedima.Model
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class SEDIMAEntities : DbContext
+    public partial class SEDIMA_NEWEntities1 : DbContext
     {
-        public SEDIMAEntities()
-            : base("name=SEDIMAEntities")
+        public SEDIMA_NEWEntities1()
+            : base("name=SEDIMA_NEWEntities1")
         {
         }
     
@@ -25,7 +25,7 @@ namespace ProyectoSedima.Model
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<REPORTES> REPORTES { get; set; }
-        public virtual DbSet<EMPLEADO> EMPLEADO { get; set; }
+        public virtual DbSet<EMPLEADOS> EMPLEADOS { get; set; }
+        public virtual DbSet<REPORTE> REPORTE { get; set; }
     }
 }

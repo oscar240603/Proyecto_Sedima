@@ -1,4 +1,4 @@
-﻿using ProyectoSedima.Model;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,12 +11,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using iText.Kernel.Pdf;
+using iText.Layout;
+using iText.Layout.Element;
+using ProyectoSedima.Model.ViewModel;
+using ProyectoSedima.Model;
 
 namespace ProyectoSedima.PL
 {
     public partial class FrmEditar : Form
     {
-        static string conexionstring = "Data Source=LAPTOP-OSCAR202\\SQLEXPRESS;Initial Catalog=SEDIMA;Integrated Security=True";                                         //"Data Source=LAPTOP-OSCAR202\\SQLEXPRESS;Initial Catalog=SEDIMA;Integrated Security=True";
+        static string conexionstring = "Data Source=LAPTOP-OSCAR202\\SQLEXPRESS;Initial Catalog=SEDIMA_NEW;Integrated Security=True";                                         //"Data Source=LAPTOP-OSCAR202/SQLEXPRESS;Initial Catalog=SEDIMA;Integrated Security=True";
         SqlConnection conexion = new SqlConnection(conexionstring);
         public FrmEditar()
         {
@@ -35,12 +41,12 @@ namespace ProyectoSedima.PL
         {
             try
             {
-                using(Model.SEDIMAEntities db = new Model.SEDIMAEntities())
+                using (Model.SEDIMA_NEWEntities1 db = new Model.SEDIMA_NEWEntities1())
                 {
-                    var lst = db.REPORTES.Where(p => p.IdReporte == pId).ToList();
+                    var lst = db.REPORTE.Where(p => p.IdReporte == pId).ToList();
                     if(lst.Count > 0)
                     {
-                        foreach(REPORTES reporte in lst)
+                        foreach(REPORTE reporte in lst)
                         {
                             txtID.Text = reporte.IdReporte.ToString();
                             txtCliente.Text = reporte.Cliente;
@@ -97,6 +103,8 @@ namespace ProyectoSedima.PL
                             txtMaxPpm.Text = reporte.Max_Ppm;
                             txtMaxEx.Text = reporte.Max_Ex_Aire;
                             txtComentarios.Text = reporte.Comentarios;
+
+                            
                         }
                     }
                 }
@@ -106,6 +114,7 @@ namespace ProyectoSedima.PL
                 MessageBox.Show(ex.Message);
             }
         }
+
 
         private void FrmEditar_Load(object sender, EventArgs e)
         {
@@ -213,7 +222,7 @@ namespace ProyectoSedima.PL
                 string volts = ObtenerOpcionSeleccionada();
 
                 conexion.Open();
-                string modificar = "UPDATE[dbo].[REPORTES]SET[Cliente] = '" + txtCliente.Text + "', [Caldera] = '" + txtCaldera.Text + "', [Modelo] = '" + txtModelo.Text + "', [Serie] = '" + txtSerie.Text + "', [Ciudad] = '" + txtCiudad.Text + "', [FecRegistro] = '" + fechaFormateada + "',[FA] = '" + txtFA.Text + "', [FG] = '" + txtFG.Text + "', [PC] = '" + txtPC.Text + "', [ABN] = '" + txtABN.Text + "', [ANN] = '" + txtANN.Text + "', [VN] = '" + txtVN.Text + "', [FCN] = '" + txtFCN.Text + "', [PF] = '" + txtPF.Text + "', [PDC] = '" + txtPDC.Text + "', [MC] = '" + txtMC.Text + "', [VV] = '" + txtVV.Text + "', [VG] = '" + txtVG.Text + "', [BG] = '" + txtBG.Text + "', [PI] = '" + txtPI.Text + "', [EFP] = '" + txtEFP.Text + "', [FF] = '" + txtFF.Text + "', [BNA] = '" + txtBNA.Text + "', [CPV] = '" + txtCPV.Text + "', [LQ] = '" + txtLQ.Text + "', [CE] = '" + txtCE.Text + "', [Chimenea] = '" + txtChimenea.Text + "', [Agua_tanque] = '" + txtAguaTanque.Text + "', [EC] = '" + txtEC.Text + "',  [SC] = '" + txtSC.Text + "', [VAP] = '" + txtVAP.Text + "', [ARR] = '" + txtArranque.Text + "', [AA] = '" + txtAA.Text + "',[VOLTS] = '"+volts+"', [AC] = '" + txtAC.Text + "', [BAA] = '" + txtBAA.Text + "', [BAD] = '" + txtBAD.Text + "', [MV] = '" + txtMV.Text + "', [Min_Co2] = '" + txtMinCo2.Text + "', [Min_O2] = '" + txtMinO2.Text + "', [Min_Ppm] = '" + txtMinPpm.Text + "', [Min_Ex_Aire] = '" + txtMinEx.Text + "',[Med_Co2] = '" + txtMedCo2.Text + "', [Med_O2] = '" + txtMedO2.Text + "', [Med_Ppm] = '" + txtMedPpm.Text + "', [Med_Ex_Aire] = '" + txtMedEx.Text + "', [Max_Co2] = '" + txtMaxCo2.Text + "', [Max_O2] = '" + txtMaxO2.Text + "', [Max_Ppm] = '" + txtMaxPpm.Text + "', [Max_Ex_Aire] = '" + txtMaxEx.Text + "', [Comentarios] = '" + txtComentarios.Text + "'  WHERE[IDReporte] = '" + txtID.Text + "'";
+                string modificar = "UPDATE[dbo].[REPORTE]SET[Cliente] = '" + txtCliente.Text + "', [Caldera] = '" + txtCaldera.Text + "', [Modelo] = '" + txtModelo.Text + "', [Serie] = '" + txtSerie.Text + "', [Ciudad] = '" + txtCiudad.Text + "', [FecRegistro] = '" + fechaFormateada + "',[FA] = '" + txtFA.Text + "', [FG] = '" + txtFG.Text + "', [PC] = '" + txtPC.Text + "', [ABN] = '" + txtABN.Text + "', [ANN] = '" + txtANN.Text + "', [VN] = '" + txtVN.Text + "', [FCN] = '" + txtFCN.Text + "', [PF] = '" + txtPF.Text + "', [PDC] = '" + txtPDC.Text + "', [MC] = '" + txtMC.Text + "', [VV] = '" + txtVV.Text + "', [VG] = '" + txtVG.Text + "', [BG] = '" + txtBG.Text + "', [PI] = '" + txtPI.Text + "', [EFP] = '" + txtEFP.Text + "', [FF] = '" + txtFF.Text + "', [BNA] = '" + txtBNA.Text + "', [CPV] = '" + txtCPV.Text + "', [LQ] = '" + txtLQ.Text + "', [CE] = '" + txtCE.Text + "', [Chimenea] = '" + txtChimenea.Text + "', [Agua_tanque] = '" + txtAguaTanque.Text + "', [EC] = '" + txtEC.Text + "',  [SC] = '" + txtSC.Text + "', [VAP] = '" + txtVAP.Text + "', [ARR] = '" + txtArranque.Text + "', [AA] = '" + txtAA.Text + "',[VOLTS] = '"+volts+"', [AC] = '" + txtAC.Text + "', [BAA] = '" + txtBAA.Text + "', [BAD] = '" + txtBAD.Text + "', [MV] = '" + txtMV.Text + "', [Min_Co2] = '" + txtMinCo2.Text + "', [Min_O2] = '" + txtMinO2.Text + "', [Min_Ppm] = '" + txtMinPpm.Text + "', [Min_Ex_Aire] = '" + txtMinEx.Text + "',[Med_Co2] = '" + txtMedCo2.Text + "', [Med_O2] = '" + txtMedO2.Text + "', [Med_Ppm] = '" + txtMedPpm.Text + "', [Med_Ex_Aire] = '" + txtMedEx.Text + "', [Max_Co2] = '" + txtMaxCo2.Text + "', [Max_O2] = '" + txtMaxO2.Text + "', [Max_Ppm] = '" + txtMaxPpm.Text + "', [Max_Ex_Aire] = '" + txtMaxEx.Text + "', [Comentarios] = '" + txtComentarios.Text + "'  WHERE[IDReporte] = '" + txtID.Text + "'";
 
                 SqlCommand comando = new SqlCommand(modificar, conexion);
                 comando.ExecuteNonQuery();
@@ -846,5 +855,15 @@ namespace ProyectoSedima.PL
         {
             btnModificar.BackColor = Color.White;
         }
+
+        
+        private void btnPDF_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+       
+
+
     }
 }

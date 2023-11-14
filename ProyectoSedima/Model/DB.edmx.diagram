@@ -4,9 +4,9 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="cf8f9cd2b2824fecbdd050bbfb1f8928" Name="Diagram1" ZoomLevel="54">
-        <EntityTypeShape EntityType="SEDIMAModel.REPORTES" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="SEDIMAModel.EMPLEADO" Width="1.5" PointX="3.375" PointY="0.75" />
+      <Diagram DiagramId="6b2f54953ca0490383358970ca0c5f71" Name="Diagram1">
+        <EntityTypeShape EntityType="SEDIMA_NEWModel.EMPLEADOS" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SEDIMA_NEWModel.REPORTE" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="SEDIMAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <EntityType Name="EMPLEADO">
+<Schema Namespace="SEDIMA_NEWModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="EMPLEADOS">
     <Key>
       <PropertyRef Name="IdEmpleado" />
     </Key>
@@ -9,7 +9,7 @@
     <Property Name="Contraseña" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="FecRegistro" Type="datetime" Nullable="false" />
   </EntityType>
-  <EntityType Name="REPORTES">
+  <EntityType Name="REPORTE">
     <Key>
       <PropertyRef Name="IdReporte" />
     </Key>
@@ -67,8 +67,8 @@
     <Property Name="Comentarios" Type="nvarchar(max)" />
     <Property Name="STATUS" Type="varchar" MaxLength="20" Nullable="false" />
   </EntityType>
-  <EntityContainer Name="SEDIMAModelStoreContainer">
-    <EntitySet Name="EMPLEADO" EntityType="Self.EMPLEADO" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="REPORTES" EntityType="Self.REPORTES" Schema="dbo" store:Type="Tables" />
+  <EntityContainer Name="SEDIMA_NEWModelStoreContainer">
+    <EntitySet Name="EMPLEADOS" EntityType="Self.EMPLEADOS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="REPORTE" EntityType="Self.REPORTE" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

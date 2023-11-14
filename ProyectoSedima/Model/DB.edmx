@@ -4,8 +4,8 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="SEDIMAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="EMPLEADO">
+      <Schema Namespace="SEDIMA_NEWModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="EMPLEADOS">
           <Key>
             <PropertyRef Name="IdEmpleado" />
           </Key>
@@ -14,7 +14,7 @@
           <Property Name="Contraseña" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="FecRegistro" Type="datetime" Nullable="false" />
         </EntityType>
-        <EntityType Name="REPORTES">
+        <EntityType Name="REPORTE">
           <Key>
             <PropertyRef Name="IdReporte" />
           </Key>
@@ -72,15 +72,25 @@
           <Property Name="Comentarios" Type="nvarchar(max)" />
           <Property Name="STATUS" Type="varchar" MaxLength="20" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="SEDIMAModelStoreContainer">
-          <EntitySet Name="EMPLEADO" EntityType="Self.EMPLEADO" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="REPORTES" EntityType="Self.REPORTES" Schema="dbo" store:Type="Tables" />
+        <EntityContainer Name="SEDIMA_NEWModelStoreContainer">
+          <EntitySet Name="EMPLEADOS" EntityType="Self.EMPLEADOS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="REPORTE" EntityType="Self.REPORTE" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="SEDIMAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="REPORTES">
+      <Schema Namespace="SEDIMA_NEWModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="EMPLEADOS">
+          <Key>
+            <PropertyRef Name="IdEmpleado" />
+          </Key>
+          <Property Name="IdEmpleado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Contraseña" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FecRegistro" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="REPORTE">
           <Key>
             <PropertyRef Name="IdReporte" />
           </Key>
@@ -116,8 +126,10 @@
           <Property Name="EC" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="SC" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="VAP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ARR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="AA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="AC" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="VOLTS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="BAA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="BAD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="MV" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
@@ -135,33 +147,30 @@
           <Property Name="Max_Ex_Aire" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="Comentarios" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="STATUS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ARR" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
-          <Property Name="VOLTS" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
         </EntityType>
-        <EntityContainer Name="SEDIMAEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="REPORTES" EntityType="Self.REPORTES" />
-          <EntitySet Name="EMPLEADO" EntityType="SEDIMAModel.EMPLEADO" />
+        <EntityContainer Name="SEDIMA_NEWEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="EMPLEADOS" EntityType="Self.EMPLEADOS" />
+          <EntitySet Name="REPORTE" EntityType="Self.REPORTE" />
         </EntityContainer>
-        <EntityType Name="EMPLEADO">
-          <Key>
-            <PropertyRef Name="IdEmpleado" />
-          </Key>
-          <Property Name="IdEmpleado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Usuario" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Contraseña" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="FecRegistro" Type="DateTime" Nullable="false" Precision="3" />
-        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="SEDIMAModelStoreContainer" CdmEntityContainer="SEDIMAEntities">
-          <EntitySetMapping Name="REPORTES">
-            <EntityTypeMapping TypeName="SEDIMAModel.REPORTES">
-              <MappingFragment StoreEntitySet="REPORTES">
-                <ScalarProperty Name="VOLTS" ColumnName="VOLTS" />
-                <ScalarProperty Name="ARR" ColumnName="ARR" />
+        <EntityContainerMapping StorageEntityContainer="SEDIMA_NEWModelStoreContainer" CdmEntityContainer="SEDIMA_NEWEntities1">
+          <EntitySetMapping Name="EMPLEADOS">
+            <EntityTypeMapping TypeName="SEDIMA_NEWModel.EMPLEADOS">
+              <MappingFragment StoreEntitySet="EMPLEADOS">
+                <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+                <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+                <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
+                <ScalarProperty Name="FecRegistro" ColumnName="FecRegistro" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REPORTE">
+            <EntityTypeMapping TypeName="SEDIMA_NEWModel.REPORTE">
+              <MappingFragment StoreEntitySet="REPORTE">
                 <ScalarProperty Name="IdReporte" ColumnName="IdReporte" />
                 <ScalarProperty Name="Cliente" ColumnName="Cliente" />
                 <ScalarProperty Name="Caldera" ColumnName="Caldera" />
@@ -194,8 +203,10 @@
                 <ScalarProperty Name="EC" ColumnName="EC" />
                 <ScalarProperty Name="SC" ColumnName="SC" />
                 <ScalarProperty Name="VAP" ColumnName="VAP" />
+                <ScalarProperty Name="ARR" ColumnName="ARR" />
                 <ScalarProperty Name="AA" ColumnName="AA" />
                 <ScalarProperty Name="AC" ColumnName="AC" />
+                <ScalarProperty Name="VOLTS" ColumnName="VOLTS" />
                 <ScalarProperty Name="BAA" ColumnName="BAA" />
                 <ScalarProperty Name="BAD" ColumnName="BAD" />
                 <ScalarProperty Name="MV" ColumnName="MV" />
@@ -213,16 +224,6 @@
                 <ScalarProperty Name="Max_Ex_Aire" ColumnName="Max_Ex_Aire" />
                 <ScalarProperty Name="Comentarios" ColumnName="Comentarios" />
                 <ScalarProperty Name="STATUS" ColumnName="STATUS" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="EMPLEADO">
-            <EntityTypeMapping TypeName="SEDIMAModel.EMPLEADO">
-              <MappingFragment StoreEntitySet="EMPLEADO">
-                <ScalarProperty Name="FecRegistro" ColumnName="FecRegistro" />
-                <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
-                <ScalarProperty Name="Usuario" ColumnName="Usuario" />
-                <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

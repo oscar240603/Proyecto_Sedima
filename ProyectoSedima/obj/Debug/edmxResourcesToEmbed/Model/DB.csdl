@@ -1,6 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="SEDIMAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityType Name="REPORTES">
+<Schema Namespace="SEDIMA_NEWModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EMPLEADOS">
+    <Key>
+      <PropertyRef Name="IdEmpleado" />
+    </Key>
+    <Property Name="IdEmpleado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Contraseña" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FecRegistro" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="REPORTE">
     <Key>
       <PropertyRef Name="IdReporte" />
     </Key>
@@ -36,8 +45,10 @@
     <Property Name="EC" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="SC" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="VAP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ARR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="AA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="AC" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VOLTS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="BAA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="BAD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="MV" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
@@ -55,20 +66,9 @@
     <Property Name="Max_Ex_Aire" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="Comentarios" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="STATUS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="ARR" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
-    <Property Name="VOLTS" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
   </EntityType>
-  <EntityContainer Name="SEDIMAEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="REPORTES" EntityType="Self.REPORTES" />
-    <EntitySet Name="EMPLEADO" EntityType="SEDIMAModel.EMPLEADO" />
+  <EntityContainer Name="SEDIMA_NEWEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EMPLEADOS" EntityType="Self.EMPLEADOS" />
+    <EntitySet Name="REPORTE" EntityType="Self.REPORTE" />
   </EntityContainer>
-  <EntityType Name="EMPLEADO">
-    <Key>
-      <PropertyRef Name="IdEmpleado" />
-    </Key>
-    <Property Name="IdEmpleado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Usuario" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Contraseña" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="FecRegistro" Type="DateTime" Nullable="false" Precision="3" />
-  </EntityType>
 </Schema>
