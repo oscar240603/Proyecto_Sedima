@@ -22,11 +22,13 @@ namespace ProyectoSedima.PL
 {
     public partial class FrmEditar : Form
     {
+        
         static string conexionstring = "Data Source=LAPTOP-OSCAR202\\SQLEXPRESS;Initial Catalog=SEDIMA_NEW;Integrated Security=True";                                         //"Data Source=LAPTOP-OSCAR202/SQLEXPRESS;Initial Catalog=SEDIMA;Integrated Security=True";
         SqlConnection conexion = new SqlConnection(conexionstring);
         public FrmEditar()
         {
             InitializeComponent();
+            
 
             this.MaximizeBox = false;
         }
@@ -862,8 +864,22 @@ namespace ProyectoSedima.PL
             
 
         }
-       
 
+        private void btnAtras_MouseEnter(object sender, EventArgs e)
+        {
+            btnAtras.BackColor = Color.LightBlue;
+        }
 
+        private void btnAtras_MouseLeave(object sender, EventArgs e)
+        {
+            btnAtras.BackColor = Color.White;
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            FrmBorrar_Modificar FrmBM = new FrmBorrar_Modificar();
+            this.Hide();
+            FrmBM.ShowDialog();
+        }
     }
 }

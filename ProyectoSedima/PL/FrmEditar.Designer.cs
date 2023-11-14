@@ -152,6 +152,7 @@
             this.rb440 = new System.Windows.Forms.RadioButton();
             this.label66 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
+            this.btnAtras = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -1343,6 +1344,22 @@
     "                                                                                " +
     "     ";
             // 
+            // btnAtras
+            // 
+            this.btnAtras.FlatAppearance.BorderSize = 0;
+            this.btnAtras.Font = new System.Drawing.Font("HP Simplified", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtras.Image = ((System.Drawing.Image)(resources.GetObject("btnAtras.Image")));
+            this.btnAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAtras.Location = new System.Drawing.Point(33, 11);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(54, 48);
+            this.btnAtras.TabIndex = 254;
+            this.btnAtras.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
+            this.btnAtras.MouseEnter += new System.EventHandler(this.btnAtras_MouseEnter);
+            this.btnAtras.MouseLeave += new System.EventHandler(this.btnAtras_MouseLeave);
+            // 
             // FrmEditar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1351,6 +1368,7 @@
             this.AutoScrollMargin = new System.Drawing.Size(0, 50);
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ClientSize = new System.Drawing.Size(814, 511);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.label67);
             this.Controls.Add(this.label66);
             this.Controls.Add(this.rb440);
@@ -1609,5 +1627,6 @@
         private System.Windows.Forms.RadioButton rb440;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Button btnAtras;
     }
 }
